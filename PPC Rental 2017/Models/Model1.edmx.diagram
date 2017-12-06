@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="729780a623fb4111b8a76f9be0f8220f" Name="Diagram1">
+        <EntityTypeShape EntityType="team15Model.DISTRICT" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.FEATURE" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.PROJECT_STATUS" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.PROPERTY" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.PROPERTY_FEATURE" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.PROPERTY_TYPE" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.STREET" Width="1.5" PointX="3" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.USER" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="team15Model.WARD" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <AssociationConnector Association="team15Model.FK_PROPERTY_DISTRICT" ManuallyRouted="false" />
+        <AssociationConnector Association="team15Model.FK_STREET_DISTRICT" ManuallyRouted="false" />
+        <AssociationConnector Association="team15Model.FK_WARD_DISTRICT" ManuallyRouted="false" />
+        <AssociationConnector Association="team15Model.FK_PROPERTY_FEATURE_FEATURE" ManuallyRouted="false" />
+        <AssociationConnector Association="team15Model.FK_PROPERTY_PROJECT_STATUS" ManuallyRouted="false" />
+        <AssociationConnector Association="team15Model.FK_PROPERTY_FEATURE_PROPERTY" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
