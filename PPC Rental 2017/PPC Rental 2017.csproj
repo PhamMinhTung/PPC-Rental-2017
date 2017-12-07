@@ -199,7 +199,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -254,10 +256,19 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Icon\css\font-awesome.css" />
+    <Content Include="Content\Icon\css\font-awesome.min.css" />
+    <Content Include="Content\Icon\font\fontawesome-webfont.svg" />
+    <Content Include="Content\Icon\jquery.min.js" />
+    <Content Include="Content\Login\style.css" />
+    <Content Include="Content\Register\css\font-awesome.min.css" />
+    <Content Include="Content\Register\css\style.css" />
+    <Content Include="Content\Register\fonts\fontawesome-webfont.svg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\LoginAndRegisterBG\LoginBG.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -282,6 +293,44 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\Register\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Register\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Register\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Register\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Register\fonts\FontAwesome.otf" />
+    <Content Include="Content\Icon\font\fontawesome-webfont.eot" />
+    <Content Include="Content\Icon\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\Icon\font\fontawesome-webfont.woff" />
+    <Content Include="Content\Icon\font\fontawesome-webfont.woff2" />
+    <Content Include="Content\Icon\font\FontAwesome.otf" />
+    <Content Include="Content\Icon\less\animated.less" />
+    <Content Include="Content\Icon\less\bordered-pulled.less" />
+    <Content Include="Content\Icon\less\core.less" />
+    <Content Include="Content\Icon\less\fixed-width.less" />
+    <Content Include="Content\Icon\less\font-awesome.less" />
+    <Content Include="Content\Icon\less\icons.less" />
+    <Content Include="Content\Icon\less\larger.less" />
+    <Content Include="Content\Icon\less\list.less" />
+    <Content Include="Content\Icon\less\mixins.less" />
+    <Content Include="Content\Icon\less\path.less" />
+    <Content Include="Content\Icon\less\rotated-flipped.less" />
+    <Content Include="Content\Icon\less\screen-reader.less" />
+    <Content Include="Content\Icon\less\stacked.less" />
+    <Content Include="Content\Icon\less\variables.less" />
+    <Content Include="Content\Icon\scss\font-awesome.scss" />
+    <Content Include="Content\Icon\scss\_animated.scss" />
+    <Content Include="Content\Icon\scss\_bordered-pulled.scss" />
+    <Content Include="Content\Icon\scss\_core.scss" />
+    <Content Include="Content\Icon\scss\_fixed-width.scss" />
+    <Content Include="Content\Icon\scss\_icons.scss" />
+    <Content Include="Content\Icon\scss\_larger.scss" />
+    <Content Include="Content\Icon\scss\_list.scss" />
+    <Content Include="Content\Icon\scss\_mixins.scss" />
+    <Content Include="Content\Icon\scss\_path.scss" />
+    <Content Include="Content\Icon\scss\_rotated-flipped.scss" />
+    <Content Include="Content\Icon\scss\_screen-reader.scss" />
+    <Content Include="Content\Icon\scss\_stacked.scss" />
+    <Content Include="Content\Icon\scss\_variables.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -328,6 +377,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Register\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
