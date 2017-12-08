@@ -20,7 +20,6 @@
     <link href="//fonts.googleapis.com/css?family=Arsenal:400,400i,700,700i" rel="stylesheet">
     <!-- //web font -->
 </head>
-
 <body>
     <!-- main -->
     <div class="main-agileinfo slider ">
@@ -32,16 +31,12 @@
                     <div class="login-form loginw3-agile">
                         <div class="agile-row">
                             <h1>Đăng nhập</h1>
-                            @if (ViewBag.mgs != null)
-                            {
-                                <p>@ViewBag.mgs</p>
-                            }
                             <div class="login-agileits-top">
                                 <form action="#" method="post">
                                     <p>User Name </p>
-                                    <input placeholder="Username or Email" type="text" class="name" name="username" required />
+                                    <input placeholder="Username or Email" type="text" class="name" name="user name" required="" />
                                     <p>Password</p>
-                                    <input placeholder="Password" type="password" class="password" name="password" required />
+                                    <input placeholder="Password" type="password" class="password" name="Password" required="" />
                                     <label class="anim">
                                         <input type="checkbox" class="checkbox">
                                         <span> Remember me ?</span>
@@ -50,7 +45,7 @@
                                 </form>
                             </div>
                             <div class="login-agileits-bottom wthree">
-                                <h6><a href="#">Quên mật khẩu?</a> &nbsp &nbsp &nbsp &nbsp <a href="~/Register/Register">Đăng kí</a> &nbsp &nbsp &nbsp &nbsp <a href="~/Home/Index">Trang chủ</a> </h6>
+                                <h6><a href="#">Quên mật khẩu?</a> &nbsp &nbsp &nbsp &nbsp <a href="~/Register/Register">Đăng kí</a> </h6>
                             </div>
                         </div>
                     </div>

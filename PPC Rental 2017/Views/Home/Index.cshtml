@@ -1,31 +1,142 @@
-﻿@{
+﻿@model IEnumerable<PPC_Rental_2017.Models.PROPERTY>
+@{
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!--Header-->
+<title>Table</title>
+<link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="~/Content/myStyle.css">
+<div class="container-fluid">
+    <div class="row">
+        <div class="inner-bg text-center">
+            <p></p>
+        </div>
+    </div>
+    <!--Khung tìm kiếm-->
+    <div class="container-fluid">
+        @*<div class="row">
+                <div class="col-md-12 me">
+                    <div class="col-md-12 header">
+                        <p>Find you place</p>
+                    </div>
+                    <div class="col-md-12 content">
+                        <div class="col-md-3 sub_ct">
+                            <div class="col-md-12">
+                                <label class="" for="orderBy"></label>
+                                <select class="form-control">
+                                    <option placeholder="Quận">Quận</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="col-md-12">
+                                <label class="" for="orderBy"></label>
+                                <select class="form-control">
+                                    <option placeholder="Đường">Đường</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 sub_ct">
+                            <div class="col-md-12">
+                                <label class="" for="orderBy"></label>
+                                <select class="form-control">
+                                    <option placeholder="Phòng tắm">Phòng tắm</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="col-md-12">
+                                <label class="" for="orderBy"></label>
+                                <select class="form-control">
+                                    <option placeholder="Bãi đậu xe">Bãi đậu xe</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 sub_ct">
+                            <div class="col-md-12">
+                                <label class="" for="orderBy"></label>
+                                <select class="form-control">
+                                    <option placeholder="Loại dự án">Loại dự án</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="col-md-12">
+                                <label class="" for="orderBy"></label>
+                                <select class="form-control">
+                                    <option placeholder="Giá">Giá</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 sub_ct">
+                            <div class="col-md-12">
+
+                                <input type="search" class="form-control" id="Search" placeholder="Search" style="margin-top: 20px">
+                            </div>
+                            <hr>
+                            <div class="col-md-12"><input class="btnsearch" type="button" value="Search" style="margin-top: 20px; height:30px"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>*@
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <!--List Project of Company-->
+    <hr />
+    <div style="margin-top:40px">
+        <div style="font-size:22px;border-bottom:3px solid #ff6a00;font-weight:bold;margin-top:13%">MỘT SỐ DỰ ÁN</div>
+        <div style="margin-top:2%">
+            <div class="row">
+                @{int count = 0;}
+                @foreach (var Item in Model)
+                {
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" style="margin-top:2%">
+                            <img src="~/Images/Item/@Item.Avatar">
+                            <div class="caption" style="height:200px; margin-top:3%">
+                                <h3 class="h3ac" style="color:cornflowerblue">@Item.PropertyName</h3>
+                                <p style="color:cornflowerblue; font-weight:bold">Giá bán:@Item.Price USD</p>
+                                <p style="color:cornflowerblue; font-weight:bold">Địa chỉ: @Item.DISTRICT.DistrictName</p>
+                                <p style="bottom:5px; position:absolute"><a href="~/ViewDetailProject/ViewDetailProject/@Item.ID" class="btn btn-primary" role="button">Xem chi tiết</a> <a href="#" class="btn btn-default" role="button">Liên hệ</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    count++;
+                    if (count == 6)
+                    {
+                        break;
+                    }
+                }
+            </div>
+        </div>
     </div>
 </div>

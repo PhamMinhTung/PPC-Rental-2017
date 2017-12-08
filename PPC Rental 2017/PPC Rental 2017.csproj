@@ -202,6 +202,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
+    <Compile Include="Controllers\ViewDetailProjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -254,21 +255,51 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\About\landing-page.min.css" />
+    <Content Include="Content\About\slick.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Icon\css\font-awesome.css" />
     <Content Include="Content\Icon\css\font-awesome.min.css" />
     <Content Include="Content\Icon\font\fontawesome-webfont.svg" />
     <Content Include="Content\Icon\jquery.min.js" />
+    <Content Include="Content\jquery.min.js" />
     <Content Include="Content\Login\style.css" />
+    <Content Include="Content\myStyle.css" />
     <Content Include="Content\Register\css\font-awesome.min.css" />
     <Content Include="Content\Register\css\style.css" />
     <Content Include="Content\Register\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\StyleSearch.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\LoginAndRegisterBG\LoginBG.jpg" />
+    <Content Include="Images\About us.jpg" />
+    <Content Include="Images\bg-footer.png" />
+    <Content Include="Images\EWMLogoHome.png" />
+    <Content Include="Images\Img1.jpg" />
+    <Content Include="Images\Img2.jpg" />
+    <Content Include="Images\Img3.jpg" />
+    <Content Include="Images\Img4.jpg" />
+    <Content Include="Images\Img5.jpg" />
+    <Content Include="Images\Img6.jpg" />
+    <Content Include="Images\Item\IMG_1592-stamp.jpg" />
+    <Content Include="Images\Item\PIS3280-Edit-stamp.jpg" />
+    <Content Include="Images\Item\PIS3611.jpg" />
+    <Content Include="Images\Item\PIS_4622-Edit.jpg" />
+    <Content Include="Images\Item\PIS_6656-Edit-stamp.jpg" />
+    <Content Include="Images\Item\PIS_6706-Edit-stamp.jpg" />
+    <Content Include="Images\Item\PIS_7319-Edit-stamp.jpg" />
+    <Content Include="Images\Item\PIS_7389-Edit-stamp.jpg" />
+    <Content Include="Images\Item\PIS_7432-Edit-stamp.jpg" />
+    <Content Include="Images\Item\sunshine-benthanh-cityhome-10-stamp.jpg" />
+    <Content Include="Images\LoginBG.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\Logo_Place.png" />
+    <Content Include="Images\main.jpg" />
+    <Content Include="Images\main_demo_new.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -379,6 +410,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Register\Register.cshtml" />
+    <Content Include="Views\ViewDetailProject\ViewDetailProject.cshtml" />
+    <Content Include="Views\Shared\_ViewDetailLayout.cshtml" />
+    <Content Include="Views\Home\Search.cshtml" />
+    <Content Include="Views\Home\Filter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

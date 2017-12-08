@@ -13,15 +13,7 @@ namespace PPC_Rental.Controllers
         // GET: Login
         public ActionResult Index()
         {
-            if (Session["UserID"] != null)
-            {
-                var userid = int.Parse(Session["UserID"].ToString());
-                return View();
-            }
-            else
-            {
-                return RedirectToAction("Login");
-            }
+            return View();
         }
         [HttpGet]
         public ActionResult Login()
@@ -38,7 +30,7 @@ namespace PPC_Rental.Controllers
                 {
                     Session["FullName"] = user.FullName;
                     Session["UserID"] = user.ID;
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index");
                 }
                 else
                 {
@@ -47,17 +39,6 @@ namespace PPC_Rental.Controllers
 
             }
             return View();
-        }
-        public ActionResult Logout (int id)
-        {
-            var user = db.USERs.FirstOrDefault(x => x.ID == id);
-            if (user != null) 
-            {
-                Session["FullName"] = null;
-                Session["UserID"] = null;
-
-            }
-            return RedirectToAction("Login","Login");
         }
 
     }

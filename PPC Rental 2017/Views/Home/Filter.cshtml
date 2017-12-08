@@ -1,0 +1,80 @@
+﻿@using PPC_Rental_2017.Models;
+@model team15Entities
+<link href="~/Content/StyleSearch.css" rel="stylesheet" />
+
+
+<form role="search" action="@Url.Action("Search","Home")" method="post">
+    <div class="row">
+        <div class="panel-heading">
+            <h3 class="panel-title"><span class="glyphicon glyphicon-search"></span> TÌM KIẾM THÔNG TIN DỰ ÁN</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group col-sm-3 col-xs-12">
+                <select class="form-control selectpicker">
+                    <option class="bs-title-option" value="">Giá</option>
+                    <option value="0">Dưới 50.000</option>
+                    <option value="1">Từ 50.000-100.000</option>
+                    <option value="2">Từ 100.000-150.000</option>
+                    <option value="3">Trên 150.000</option>
+                </select>
+                <hr />
+                <select class="form-control selectpicker">
+                    <option class="bs-title-option" value="">Loại dự án</option>
+                    @foreach (PROPERTY_TYPE pt in Model.PROPERTY_TYPE)
+                    {
+                        <option>@pt.Description</option>
+                    }
+                </select>
+            </div>
+
+            <div class="form-group col-sm-3 col-xs-12">
+                <select class="form-control selectpicker">
+                    <option class="bs-title-option" value="">Quận/ Huyện</option>
+                    <option>Quận/Huyện</option>
+                    @foreach (DISTRICT dt in Model.DISTRICTs)
+                    {
+                        <option>@dt.DistrictName</option>
+                    }
+                </select>
+                <hr />
+                <select class="form-control selectpicker">
+                    <option class="bs-title-option" value="">Bãi đậu xe</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                </select>
+            </div>
+
+            <div class="form-group col-sm-3 col-xs-12">
+                <select class="form-control selectpicker">
+                    <option class="bs-title-option" value="">Phòng tắm</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+
+                </select>
+                <hr />
+                <select class="form-control selectpicker">
+                    <option class="bs-title-option" value="">Phòng ngủ</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                </select>
+            </div>
+
+            <div class="form-group col-sm-3 col-xs-12">
+                <select class="form-control selectpicker">
+                    <option class="bs-title-option" value="">Phòng ngủ</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                </select>
+                <hr />
+                <button type="submit" class="btn btn-primary form-control searchform">Find</button>
+            </div>
+        </div>
+    </div>
+</form>
