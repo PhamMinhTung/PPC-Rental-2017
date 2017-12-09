@@ -206,7 +206,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ABOUT_US.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CONTACT.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\DISTRICT.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -230,6 +236,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\News_and_Events.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\PROJECT_STATUS.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -242,7 +251,16 @@
     <Compile Include="Models\PROPERTY_TYPE.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\STREET.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\USER.cs">
@@ -263,7 +281,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\Icon\css\font-awesome.css" />
     <Content Include="Content\Icon\css\font-awesome.min.css" />
-    <Content Include="Content\Icon\font\fontawesome-webfont.svg" />
+    <Content Include="Content\Icon\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\Icon\jquery.min.js" />
     <Content Include="Content\jquery.min.js" />
     <Content Include="Content\Login\style.css" />
@@ -329,11 +347,11 @@
     <Content Include="Content\Register\fonts\fontawesome-webfont.woff" />
     <Content Include="Content\Register\fonts\fontawesome-webfont.woff2" />
     <Content Include="Content\Register\fonts\FontAwesome.otf" />
-    <Content Include="Content\Icon\font\fontawesome-webfont.eot" />
-    <Content Include="Content\Icon\font\fontawesome-webfont.ttf" />
-    <Content Include="Content\Icon\font\fontawesome-webfont.woff" />
-    <Content Include="Content\Icon\font\fontawesome-webfont.woff2" />
-    <Content Include="Content\Icon\font\FontAwesome.otf" />
+    <Content Include="Content\Icon\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Icon\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Icon\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Icon\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Icon\fonts\FontAwesome.otf" />
     <Content Include="Content\Icon\less\animated.less" />
     <Content Include="Content\Icon\less\bordered-pulled.less" />
     <Content Include="Content\Icon\less\core.less" />

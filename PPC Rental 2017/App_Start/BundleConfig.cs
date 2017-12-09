@@ -25,6 +25,7 @@ namespace PPC_Rental_2017
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/Icon/css/font-awesome.min.css",
                       "~/Content/site.css"));
         }
     }

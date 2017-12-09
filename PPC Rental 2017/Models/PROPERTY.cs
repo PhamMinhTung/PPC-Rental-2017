@@ -47,5 +47,8 @@ namespace PPC_Rental_2017.Models
         public virtual PROJECT_STATUS PROJECT_STATUS { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PROPERTY_FEATURE> PROPERTY_FEATURE { get; set; }
+        public virtual PROPERTY_TYPE PROPERTY_TYPE { get; set; }
+        public virtual STREET STREET { get; set; }
+        public virtual WARD WARD { get; set; }
     }
 }
