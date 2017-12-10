@@ -1,0 +1,6 @@
+C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.dll
+C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.pdb
+C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csprojResolveAssemblyReference.cache
+C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csproj.CoreCompileInputs.cache
+C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
+C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb
