@@ -4,3 +4,9 @@ C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental201
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.pdb
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csprojResolveAssemblyReference.cache
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csproj.CoreCompileInputs.cache
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb

@@ -247,3 +247,88 @@ C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPC Rental 2
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.pdb
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.dll
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\ApplicationInsights.config
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\csc.exe
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\System.Collections.Immutable.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\System.Reflection.Metadata.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\vbc.exe
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\VBCSCompiler.exe
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\VBCSCompiler.exe.config
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\PPC Rental 2017.dll.config
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\PPC Rental 2017.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\PPC Rental 2017.pdb
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Antlr3.Runtime.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.SqlServer.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.DependencyCollector.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.Web.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.WindowsServer.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.ApplicationInsights.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Google.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Web.Infrastructure.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Newtonsoft.Json.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Owin.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Helpers.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Mvc.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Optimization.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Razor.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Deployment.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Razor.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\WebGrease.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.DependencyCollector.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.Web.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.WindowsServer.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.ApplicationInsights.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Newtonsoft.Json.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Helpers.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Mvc.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Optimization.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Razor.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Deployment.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Razor.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Antlr3.Runtime.pdb
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.SqlServer.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Google.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.csprojResolveAssemblyReference.cache
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.csproj.CoreCompileInputs.cache
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.pdb

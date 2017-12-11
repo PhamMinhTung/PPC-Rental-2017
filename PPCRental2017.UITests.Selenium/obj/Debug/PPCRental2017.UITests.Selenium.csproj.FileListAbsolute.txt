@@ -4,3 +4,9 @@ C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental201
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.dll
 C:\Users\Quang Ty\Downloads\ASP.NET-MVC\ASP.NET-MVC\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.pdb
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\PPCRental2017.UITests.Selenium.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\PPCRental2017.UITests.Selenium.pdb
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.csprojResolveAssemblyReference.cache
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.csproj.CoreCompileInputs.cache
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.dll
+D:\Phân tích hướng đối tượng\FinalProject\PPC_10_12\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.pdb
