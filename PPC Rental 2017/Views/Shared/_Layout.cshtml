@@ -21,19 +21,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="~/Images/LoginBG.jpg" style="height:700px; width:100%;border-radius:20px" />
-                <div class="carousel-caption">
-
-                </div>
-            </div>
-            <div class="item">
-                <img src="~/Images/main.jpg" style="height:700px; width:100%;border-radius:20px" />
-                <div class="carousel-caption">
-
-                </div>
-            </div>
-            <div class="item">
                 <img src="~/Images/main_demo_new.jpg" style="height:700px; width:100%;border-radius:20px" />
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Images/main_demo_3.jpg" style="height:700px; width:100%;border-radius:20px" />
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/Images/main_demo_2.jpg" style="height:700px; width:100%;border-radius:20px" />
                 <div class="carousel-caption">
 
                 </div>
@@ -54,7 +54,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" style="width:95px;height:95px">
+                <a class="navbar-brand" href="~/Home/Index" style="width:95px;height:95px">
                     <img alt="Brand" src="~/Images/EWMLogoHome.png" style="width:100%;height:100%">
                 </a>
             </div>
@@ -66,9 +66,9 @@
             </form>
             <div class="collapse navbar-collapse" style="margin-bottom:5px;margin-top:25px">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Home</a></li>
+                   
 
-                    <li class="dropdown">
+                   <!-- <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">
                             Loại dự án
                             <span class="caret"></span>
@@ -89,8 +89,9 @@
                         </ul>
 
                     </li>
-
+                       -->
                     <li><a href="~/Home/About" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Giới thiệu</a></li>
+<<<<<<< HEAD
                    
                     @if (Session["UserID"] == null)
                     {
@@ -110,6 +111,11 @@
 
                     }
 
+=======
+                    <li><a href="~/PostProject/PostProject" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng Dự Án</a></li>
+                    <li><a href="~/Register/Register" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng kí</a></li>
+                    <li><a href="~/Login/Login" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7"><span>Đăng nhập </span></a></li>
+>>>>>>> f2301cd70d097bfcc924c7a87d8bbe3c9a737131
                 </ul>
             </div>
         </div>
