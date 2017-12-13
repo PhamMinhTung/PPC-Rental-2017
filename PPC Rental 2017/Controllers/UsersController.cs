@@ -50,7 +50,7 @@ namespace PPC_Rental_2017.Controllers
                 Session["UserID"] = null;
 
             }
-            return RedirectToAction("Login", "Login");
+            return RedirectToAction("Index", "Home");
         }
         [HttpGet]
         public ActionResult Register()
@@ -137,7 +137,7 @@ namespace PPC_Rental_2017.Controllers
                     {
 
                         smtp.Send(message);
-                        return RedirectToAction("ForgetComplete", "Agency");
+                        return RedirectToAction("ForgetComplete", "Users");
                     }
                 }
                 else

@@ -59,7 +59,7 @@ body {
 	position:relative;
 }
 /*--icons--*/
-.icon1 .icon2 .icon3 .icon4 .icon5 .icon6{
+.sub-main .icon1, .icon2, .icon3 ,.icon4, .icon5, .icon6{
 	position: absolute;
     left: 55px;
     font-size: 18px;

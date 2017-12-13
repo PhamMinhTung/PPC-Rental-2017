@@ -124,9 +124,9 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
-    <Property Name="Password" Type="varchar" MaxLength="30" />
+    <Property Name="Password" Type="varchar" MaxLength="200" />
     <Property Name="FullName" Type="nvarchar" MaxLength="50" />
     <Property Name="Phone" Type="varchar" MaxLength="15" />
     <Property Name="Address" Type="nvarchar" MaxLength="100" />
