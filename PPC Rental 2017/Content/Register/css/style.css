@@ -59,31 +59,35 @@ body {
 	position:relative;
 }
 /*--icons--*/
-.icon1,.icon2,.icon3,.icon4,.icon5,.icon6{
+.icon1 .icon2 .icon3 .icon4 .icon5 .icon6{
 	position: absolute;
-    left: 20px;
+    left: 55px;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.83);
     width: 22px;
-    margin-left:25px !important;
 }
 .icon1{
 	top: 12px;
+    
 }
 .icon2 {
     top: 75px;
+    
 }
 .icon3 {
-	 top: 138px; 
-}
+    top: 138px;
+} 
 .icon4 {
     top: 201px;
+    
 }
 .icon5 {
 	top: 264px;
+    
 }
 .icon6 {
   top: 327px;
+ 
 }
 /*--//icons--*/
 
