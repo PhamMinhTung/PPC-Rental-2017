@@ -27,7 +27,6 @@ body {
     background-size: cover;
 	font-family: 'Lato', sans-serif;
 	text-align:center;
-    
 }
 /*--header--*/
 .header-w3l{
@@ -62,11 +61,11 @@ body {
 /*--icons--*/
 .icon1,.icon2,.icon3,.icon4,.icon5,.icon6{
 	position: absolute;
-    left: 51px;
+    left: 20px;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.83);
     width: 22px;
-    margin-left:20px;
+    margin-left:25px !important;
 }
 .icon1{
 	top: 12px;
@@ -335,4 +334,3 @@ body {
 	}
 }
 /*--//Responsive--*/
-

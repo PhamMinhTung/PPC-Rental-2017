@@ -16,7 +16,7 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" Nullable="false" />
-    <Property Name="SaleID" Type="varchar" MaxLength="10" />
+    <Property Name="SaleID" Type="int" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
     <Property Name="Phone" Type="varchar" MaxLength="15" />
@@ -124,8 +124,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="UserID" Type="varchar" MaxLength="10" />
+    <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
     <Property Name="Password" Type="varchar" MaxLength="30" />
     <Property Name="FullName" Type="nvarchar" MaxLength="50" />
@@ -143,7 +142,7 @@
     <Property Name="District_ID" Type="int" />
     <Property Name="Status" Type="bit" />
   </EntityType>
-  <Association Name="FK_CONTACT_USER1">
+  <Association Name="FK_CONTACT_USER">
     <End Role="USER" Type="Self.USER" Multiplicity="0..1" />
     <End Role="CONTACT" Type="Self.CONTACT" Multiplicity="*" />
     <ReferentialConstraint>
@@ -152,6 +151,18 @@
       </Principal>
       <Dependent Role="CONTACT">
         <PropertyRef Name="SaleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_News_and_Events_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="1" />
+    <End Role="News_and_Events" Type="Self.News_and_Events" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="News_and_Events">
+        <PropertyRef Name="Sale_ID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -224,6 +235,30 @@
       </Principal>
       <Dependent Role="PROPERTY">
         <PropertyRef Name="Street_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROPERTY_USER">
+    <End Role="USER" Type="Self.USER" Multiplicity="0..1" />
+    <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PROPERTY">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROPERTY_USER1">
+    <End Role="USER" Type="Self.USER" Multiplicity="0..1" />
+    <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="USER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PROPERTY">
+        <PropertyRef Name="Sale_ID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -308,9 +343,13 @@
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="USER" EntityType="Self.USER" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="WARD" EntityType="Self.WARD" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_CONTACT_USER1" Association="Self.FK_CONTACT_USER1">
+    <AssociationSet Name="FK_CONTACT_USER" Association="Self.FK_CONTACT_USER">
       <End Role="USER" EntitySet="USER" />
       <End Role="CONTACT" EntitySet="CONTACT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_News_and_Events_USER" Association="Self.FK_News_and_Events_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="News_and_Events" EntitySet="News_and_Events" />
     </AssociationSet>
     <AssociationSet Name="FK_PROPERTY_DISTRICT" Association="Self.FK_PROPERTY_DISTRICT">
       <End Role="DISTRICT" EntitySet="DISTRICT" />
@@ -334,6 +373,14 @@
     </AssociationSet>
     <AssociationSet Name="FK_PROPERTY_STREET" Association="Self.FK_PROPERTY_STREET">
       <End Role="STREET" EntitySet="STREET" />
+      <End Role="PROPERTY" EntitySet="PROPERTY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROPERTY_USER" Association="Self.FK_PROPERTY_USER">
+      <End Role="USER" EntitySet="USER" />
+      <End Role="PROPERTY" EntitySet="PROPERTY" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROPERTY_USER1" Association="Self.FK_PROPERTY_USER1">
+      <End Role="USER" EntitySet="USER" />
       <End Role="PROPERTY" EntitySet="PROPERTY" />
     </AssociationSet>
     <AssociationSet Name="FK_PROPERTY_WARD" Association="Self.FK_PROPERTY_WARD">

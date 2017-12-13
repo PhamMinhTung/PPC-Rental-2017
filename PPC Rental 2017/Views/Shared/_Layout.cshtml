@@ -91,8 +91,25 @@
                     </li>
 
                     <li><a href="~/Home/About" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Giới thiệu</a></li>
-                    <li><a href="~/Register/Register" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng kí</a></li>
-                    <li><a href="~/Login/Login" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7"><span>Đăng nhập </span></a></li>
+                   
+                    @if (Session["UserID"] == null)
+                    {
+
+                        <li><a href="~/Users/Register" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng kí</a></li>
+                        <li><a href="~/Users/Login" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7"><span><strong>Đăng nhập</strong></span></a></li>
+                    }
+                    else
+                    {
+
+                        <li>
+                            <a href="#" style="padding-left:45px;border-top-width:2em; color: #d9ecf7"> Xin chào @Session["FullName"]</a>
+                        </li>
+                                <li>
+                                    <a href="~/Login/Logout/@Session["UserID"]" style="padding-left: 45px;border-top-width:2em; color:#d9ecf7">Logout</a>
+                                </li>
+
+                    }
+
                 </ul>
             </div>
         </div>
@@ -148,7 +165,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12"><hr style="relative" /></div>
-                <div class="col-sm-12"><a href="#top" class="btn btn-danger scroltop" style="width: 60px; ;"><i class="fa fa-angle-up"></i></a></div>
+                <div class="col-sm-12"><a href="#top" class="btn btn-danger scroltop" style="width: 60px; margin-left:500px"><i class="fa fa-angle-up"></i></a></div>
             </div>
         </div>
         <br />

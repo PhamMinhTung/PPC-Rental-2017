@@ -15,7 +15,7 @@ namespace PPC_Rental_2017.Models
     public partial class CONTACT
     {
         public int ID { get; set; }
-        public string SaleID { get; set; }
+        public Nullable<int> SaleID { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }

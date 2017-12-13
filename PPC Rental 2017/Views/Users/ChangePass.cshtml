@@ -1,5 +1,5 @@
-﻿
-@{
+﻿@{
+    ViewBag.Title = "ChangePass";
     Layout = null;
 }
 
@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Đăng nhập</title>
+    <title>Thay đổi mật khẩu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Shadow Login Form template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
@@ -30,22 +30,21 @@
                     <!-- login form -->
                     <div class="login-form loginw3-agile">
                         <div class="agile-row">
-                            <h1>Đăng nhập</h1>
+                            <h1>Change Password</h1>
                             <div class="login-agileits-top">
                                 <form action="#" method="post">
-                                    <p>User Name </p>
-                                    <input placeholder="Username or Email" type="text" class="name" name="user name" required="" />
-                                    <p>Password</p>
-                                    <input placeholder="Password" type="password" class="password" name="Password" required="" />
-                                    <label class="anim">
-                                        <input type="checkbox" class="checkbox">
-                                        <span> Remember me ?</span>
-                                    </label>
-                                    <input type="submit" value="Login">
+                                    <p>Current Password </p>
+                                    <input placeholder="Mật khẩu hiện tại" type="password" class="name" name="passOld" required="" />
+                                    <p>New Password</p>
+                                    <input placeholder="Mật khẩu mới" id="passNew1" type="password" class="password" name="passNew" required="" />
+                                    <p>Password Confirm</p>
+                                    <input placeholder="Nhập lại mật khẩu" id="passNew2" type="password" class="password" name="passCf" required="" />
+                                    <p></p>
+                                    <input type="submit" value="submit">
                                 </form>
                             </div>
                             <div class="login-agileits-bottom wthree">
-                                <h6><a href="#">Quên mật khẩu?</a> &nbsp &nbsp &nbsp &nbsp <a href="~/Register/Register">Đăng kí</a> </h6>
+                                <h6><a href="~/Home/Index">Trang chủ</a> &nbsp &nbsp &nbsp &nbsp <a href="~/Users/Login">Đăng nhập</a> </h6>
                             </div>
                         </div>
                     </div>

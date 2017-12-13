@@ -19,5 +19,7 @@ namespace PPC_Rental_2017.Models
         public string ShortDescription { get; set; }
         public string Images { get; set; }
         public int Sale_ID { get; set; }
+    
+        public virtual USER USER { get; set; }
     }
 }

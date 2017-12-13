@@ -18,10 +18,12 @@ namespace PPC_Rental_2017.Models
         public USER()
         {
             this.CONTACTs = new HashSet<CONTACT>();
+            this.News_and_Events = new HashSet<News_and_Events>();
+            this.PROPERTies = new HashSet<PROPERTY>();
+            this.PROPERTies1 = new HashSet<PROPERTY>();
         }
     
-        public string ID { get; set; }
-        public string UserID { get; set; }
+        public int ID { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public string FullName { get; set; }
@@ -32,5 +34,11 @@ namespace PPC_Rental_2017.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CONTACT> CONTACTs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<News_and_Events> News_and_Events { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PROPERTY> PROPERTies { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PROPERTY> PROPERTies1 { get; set; }
     }
 }
