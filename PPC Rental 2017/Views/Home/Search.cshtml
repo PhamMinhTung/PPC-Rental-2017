@@ -1,7 +1,52 @@
 ﻿
 @{
     ViewBag.Title = "Search";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_ViewDetailLayout.cshtml";
 }
-<h2>Search</h2>
+
+
+@model IEnumerable<PPC_Rental_2017.Models.PROPERTY>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div style="margin-top:11%;margin-bottom:3%">
+    <div style="font-size:22px;border-bottom:3px solid #ff6a00;font-weight:bold;margin-top:3%;">KẾT QUẢ TÌM KIẾM</div>
+    <div style="margin-top:2%">
+        <div class="row">
+            <div class="col-md-9">
+                @{int count = 0;}
+                @foreach (var Item in Model)
+                {
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" style="margin-top:2%">
+                            <img src="~/Images/Item/@Item.Avatar">
+                            <div class="caption" style="height:250px; margin-top:3%">
+                                <h3 class="h3ac" style="color:cornflowerblue">@Item.PropertyName</h3>
+                                <p style="color:cornflowerblue; font-weight:bold">Giá bán:@Item.Price USD</p>
+                                <p style="color:cornflowerblue; font-weight:bold">Địa chỉ: @Item.DISTRICT.DistrictName @Item.WARD.WardName @Item.STREET.StreetName</p>
+                                <p style="bottom:5px; position:absolute"><a href="~/Home/ViewDetailProject/@Item.ID" class="btn btn-primary" role="button">Xem chi tiết</a> <a href="#" class="btn btn-default" role="button">Liên hệ</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    count++;
+                    if (count == 6)
+                    {
+                        break;
+                    }
+
+                }
+            </div>
+            <div class="col col-sm-6 col-md-3">
+                @Html.Action("filter", "home")
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
 

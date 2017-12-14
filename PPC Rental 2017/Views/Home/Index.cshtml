@@ -7,126 +7,32 @@
 <title>Table</title>
 <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="~/Content/myStyle.css">
-<div class="container-fluid">
+<div class="container-fluid" style="margin-bottom:3%">
     <div class="row">
         <div class="inner-bg text-center">
             <p></p>
         </div>
     </div>
     <!--Khung tìm kiếm-->
-    <div class="container-fluid">
-        @*<div class="row">
-                <div class="col-md-12 me">
-                    <div class="col-md-12 header">
-                        <p>Find you place</p>
-                    </div>
-                    <div class="col-md-12 content">
-                        <div class="col-md-3 sub_ct">
-                            <div class="col-md-12">
-                                <label class="" for="orderBy"></label>
-                                <select class="form-control">
-                                    <option placeholder="Quận">Quận</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-
-                                </select>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <label class="" for="orderBy"></label>
-                                <select class="form-control">
-                                    <option placeholder="Đường">Đường</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 sub_ct">
-                            <div class="col-md-12">
-                                <label class="" for="orderBy"></label>
-                                <select class="form-control">
-                                    <option placeholder="Phòng tắm">Phòng tắm</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <label class="" for="orderBy"></label>
-                                <select class="form-control">
-                                    <option placeholder="Bãi đậu xe">Bãi đậu xe</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 sub_ct">
-                            <div class="col-md-12">
-                                <label class="" for="orderBy"></label>
-                                <select class="form-control">
-                                    <option placeholder="Loại dự án">Loại dự án</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                            <hr>
-                            <div class="col-md-12">
-                                <label class="" for="orderBy"></label>
-                                <select class="form-control">
-                                    <option placeholder="Giá">Giá</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3 sub_ct">
-                            <div class="col-md-12">
-
-                                <input type="search" class="form-control" id="Search" placeholder="Search" style="margin-top: 20px">
-                            </div>
-                            <hr>
-                            <div class="col-md-12"><input class="btnsearch" type="button" value="Search" style="margin-top: 20px; height:30px"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>*@
-    </div>
     <!--List Project of Company-->
     <hr />
     <div style="margin-top:40px">
-        <div style="font-size:22px;border-bottom:3px solid #ff6a00;font-weight:bold;margin-top:13%">MỘT SỐ DỰ ÁN</div>
+        <div style="font-size:22px;border-bottom:3px solid #ff6a00;font-weight:bold;margin-top:3%;">CHOOSE YOUR PLACE</div>
         <div style="margin-top:2%">
             <div class="row">
+                <div class="col-md-9">
                 @{int count = 0;}
                 @foreach (var Item in Model)
                 {
+                    
                     <div class="col-sm-6 col-md-4">
                         <div class="thumbnail" style="margin-top:2%">
                             <img src="~/Images/Item/@Item.Avatar">
-                            <div class="caption" style="height:200px; margin-top:3%">
+                            <div class="caption" style="height:250px; margin-top:3%">
                                 <h3 class="h3ac" style="color:cornflowerblue">@Item.PropertyName</h3>
                                 <p style="color:cornflowerblue; font-weight:bold">Giá bán:@Item.Price USD</p>
-                                <p style="color:cornflowerblue; font-weight:bold">Địa chỉ: @Item.DISTRICT.DistrictName</p>
-                                <p style="bottom:5px; position:absolute"><a href="~/ViewDetailProject/ViewDetailProject/@Item.ID" class="btn btn-primary" role="button">Xem chi tiết</a> <a href="#" class="btn btn-default" role="button">Liên hệ</a></p>
+                                <p style="color:cornflowerblue; font-weight:bold">Địa chỉ: @Item.DISTRICT.DistrictName, @Item.WARD.WardName, @Item.STREET.StreetName</p>
+                                <p style="bottom:5px; position:absolute"><a href="~/Home/ViewDetailProject/@Item.ID" class="btn btn-primary" role="button">Xem chi tiết</a> <a href="#" class="btn btn-default" role="button">Liên hệ</a></p>
                             </div>
                         </div>
                     </div>
@@ -135,8 +41,14 @@
                     {
                         break;
                     }
+
                 }
+                 </div>
+                <div class="col col-sm-6 col-md-3">
+                    @Html.Action("filter", "home")
+                </div>
             </div>
+                
         </div>
     </div>
 </div>

@@ -21,3 +21,25 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.Acc
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.dll.config
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.pdb
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\Newtonsoft.Json.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Helpers.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Mvc.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Razor.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Razor.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\TechTalk.SpecFlow.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\Newtonsoft.Json.xml
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Helpers.xml
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Mvc.xml
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Razor.xml
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.xml
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Razor.xml
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csprojResolveAssemblyReference.cache
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
+E:\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb

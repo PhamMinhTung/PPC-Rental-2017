@@ -30,35 +30,53 @@ namespace PPC_Rental_2017.Controllers
 
             return View();
         }
+        [HttpPost]
+        public ActionResult Search(string searchtxt, string gia, string quanhuyen, string loaida, string phongtam, string phongngu, string baidauxe)
+        {
+
+            IEnumerable<PPC_Rental_2017.Models.PROPERTY> ls;
+            var dicGia = new Dictionary<string, string> { { "Dưới 50.000", "0#50000" }, { "Từ 50.000-100.000", "50000#100000" }, { "Từ 100.000-150.000", "100000#150000" }, { "Trên 150.000", "150000#999999999" } };
+            if (searchtxt == "")
+            {
+                if (gia != "Giá")
+                {
+                    int first = int.Parse(dicGia[gia].Split('#')[0]);
+                    int second = int.Parse(dicGia[gia].Split('#')[1]);
+                    ls = db.PROPERTies.Where(x => x.Price >= first && x.Price <= second);
+                }
+                else
+                    ls = db.PROPERTies;
+
+                if (phongtam != "Phòng tắm")
+                    ls = ls.Where(x => x.BathRoom.ToString() == phongtam);
+                if (phongngu != "Phòng ngủ")
+                    ls = ls.Where(x => x.BedRoom.ToString() == phongngu);
+                if (baidauxe != "Bãi đậu xe")
+                    ls = ls.Where(x => x.PackingPlace.ToString() == baidauxe);
+                ls = ls.ToList();
+            }
+            else
+            {
+                ls = db.PROPERTies.Where(x => x.PropertyName.Trim().ToLower().Contains(searchtxt.Trim().ToLower()));
+            }
+
+            return View(ls);
+
+        }
         public PartialViewResult Filter()
         {
             return PartialView(db);
         }
-
-        [HttpPost]
-        public ActionResult Search(string gia, string quanhuyen, string loaida, string phongtam, string phongngu, string baidauxe)
+        public ActionResult ViewDetailProject(int id)
         {
-
-            IEnumerable<PPC_Rental_2017.Models.PROPERTY> vc;
-
-            if (gia == "Dưới 50000")
-            {
-                vc = db.PROPERTies.ToList().Where(x => (x.Price < 50000 && gia != "Giá") || (x.DISTRICT.DistrictName == quanhuyen && quanhuyen != "Quận/Huyện") || (x.BathRoom.ToString() == phongtam && phongtam != "Phòng tắm") || (x.BedRoom.ToString() == phongngu && phongngu != "Phòng ngủ") || (x.PackingPlace.ToString() == baidauxe && baidauxe != "Bãi đậu xe"));
-            }
-            else if (gia == "Từ 50000-100000")
-            {
-                vc = db.PROPERTies.ToList().Where(x => (x.Price >= 50000 && x.Price < 100000 && gia != "Giá") || (x.DISTRICT.DistrictName == quanhuyen && quanhuyen != "Quận/Huyện") || (x.BathRoom.ToString() == phongtam && phongtam != "Phòng tắm") || (x.BedRoom.ToString() == phongngu && phongngu != "Phòng ngủ") || (x.PackingPlace.ToString() == baidauxe && baidauxe != "Bãi đậu xe"));
-            }
-            else if (gia == "Từ 100000-150000")
-            {
-                vc = db.PROPERTies.ToList().Where(x => (x.Price >= 100000 && x.Price < 150000 && gia != "Giá") || (x.DISTRICT.DistrictName == quanhuyen && quanhuyen != "Quận/Huyện")  || (x.BathRoom.ToString() == phongtam && phongtam != "Phòng tắm") || (x.BedRoom.ToString() == phongngu && phongngu != "Phòng ngủ") || (x.PackingPlace.ToString() == baidauxe && baidauxe != "Bãi đậu xe"));
-            }
-            else
-            {
-                vc = db.PROPERTies.ToList().Where(x => (x.Price >= 150000 && gia != "Giá") || (x.DISTRICT.DistrictName == quanhuyen && quanhuyen != "Quận/Huyện")  || (x.BathRoom.ToString() == phongtam && phongtam != "Phòng tắm") || (x.BedRoom.ToString() == phongngu && phongngu != "Phòng ngủ") || (x.PackingPlace.ToString() == baidauxe && baidauxe != "Bãi đậu xe"));
-            }
-
-            return View(vc);
+            var project = db.PROPERTies.FirstOrDefault(t => t.ID == id);
+            return View(project);
         }
+        public ActionResult ViewDetailProject()
+        {
+            var project = db.PROPERTies.FirstOrDefault(t => t.ID == id);
+            return View(project);
+        }
+            
     }
 }

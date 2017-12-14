@@ -1,2 +1,3 @@
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.csprojResolveAssemblyReference.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.csproj.CoreCompileInputs.cache
+E:\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.csprojResolveAssemblyReference.cache

@@ -20,3 +20,25 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UIT
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.pdb
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\PPCRental2017.UITests.Selenium.dll.config
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\PPCRental2017.UITests.Selenium.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\PPCRental2017.UITests.Selenium.pdb
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\Newtonsoft.Json.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.Helpers.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.Mvc.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.Razor.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.WebPages.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.WebPages.Razor.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\TechTalk.SpecFlow.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\Newtonsoft.Json.xml
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.Helpers.xml
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.Mvc.xml
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.Razor.xml
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.WebPages.xml
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\System.Web.WebPages.Razor.xml
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.csprojResolveAssemblyReference.cache
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.dll
+E:\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.pdb
