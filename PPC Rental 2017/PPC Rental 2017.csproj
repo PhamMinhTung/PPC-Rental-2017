@@ -206,12 +206,8 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-<<<<<<< HEAD
     <Compile Include="Controllers\UsersController.cs" />
-=======
     <Compile Include="Controllers\PostProjectController.cs" />
-    <Compile Include="Controllers\RegisterController.cs" />
->>>>>>> f2301cd70d097bfcc924c7a87d8bbe3c9a737131
     <Compile Include="Controllers\ViewDetailProjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -366,6 +362,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -480,16 +477,13 @@
     <Content Include="Views\Shared\_ViewDetailLayout.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Home\Filter.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
     <Content Include="Views\Users\ChangePass.cshtml" />
     <Content Include="Views\Users\ForgetPassword.cshtml" />
     <Content Include="Views\Users\ForgetComplete.cshtml" />
-=======
     <Content Include="Views\PostProject\PostProject.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
->>>>>>> f2301cd70d097bfcc924c7a87d8bbe3c9a737131
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -520,7 +514,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>61763</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
