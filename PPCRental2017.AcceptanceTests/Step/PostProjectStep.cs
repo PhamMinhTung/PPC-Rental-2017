@@ -51,22 +51,20 @@ namespace PPCRental2017.AcceptanceTests.Step
                     BedRoom = int.Parse(row["Bedroom"]),
                     PackingPlace = int.Parse(row["Packing Place"])
                 };
-                //db.PROPERTies.Add(Postpr);
+                db.PROPERTies.Add(Postpr);
             }
         }
 
         [When(@"I press create")]
         public void WhenIPressCreate()
         {
-
+            WhenIClickButtonPost();
         }
 
-        [Then(@"System show message successfull")]
-        public void ThenSystemShowMessageSuccessfull()
+        [Then(@"System show Home page")]
+        public void ThenSystemShowHomePage()
         {
-
+            _postDriver.NavigateHome();
         }
-
-
     }
 }

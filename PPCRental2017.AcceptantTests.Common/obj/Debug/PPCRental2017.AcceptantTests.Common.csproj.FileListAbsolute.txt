@@ -17,7 +17,10 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.Acc
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csprojResolveAssemblyReference.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.dll
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.xml
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.SqlServer.xml

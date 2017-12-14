@@ -20,3 +20,7 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UIT
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.pdb
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\EntityFramework.dll
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\EntityFramework.xml
+C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\EntityFramework.SqlServer.xml
