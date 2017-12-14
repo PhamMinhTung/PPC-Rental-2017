@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\ApplicationInsights.config
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\csc.exe
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -39,7 +40,6 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\b
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Twitter.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Newtonsoft.Json.dll
-C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Owin.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Helpers.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Mvc.dll
@@ -57,7 +57,6 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\b
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Newtonsoft.Json.xml
-C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Helpers.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Mvc.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Optimization.xml
@@ -80,10 +79,10 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\b
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.csprojResolveAssemblyReference.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.pdb
+<<<<<<< HEAD
 E:\PPC-Rental-2017\PPC Rental 2017\bin\ApplicationInsights.config
 E:\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\csc.exe
 E:\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -169,3 +168,92 @@ E:\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.MicrosoftAccount.
 E:\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.csprojResolveAssemblyReference.cache
 E:\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.dll
 E:\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.pdb
+=======
+=======
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\ApplicationInsights.config
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\csc.exe
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\System.Collections.Immutable.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\System.Reflection.Metadata.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\vbc.exe
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\VBCSCompiler.exe
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\roslyn\VBCSCompiler.exe.config
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\PPC Rental 2017.dll.config
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\PPC Rental 2017.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\PPC Rental 2017.pdb
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Antlr3.Runtime.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.SqlServer.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.Agent.Intercept.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.DependencyCollector.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.Web.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.WindowsServer.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.ApplicationInsights.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Core.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Cookies.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Facebook.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Google.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.OAuth.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Twitter.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Web.Infrastructure.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Newtonsoft.Json.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Owin.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Helpers.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Mvc.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Optimization.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Razor.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Deployment.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Razor.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\TechTalk.SpecFlow.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\WebGrease.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.DependencyCollector.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.Web.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.WindowsServer.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.ApplicationInsights.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Newtonsoft.Json.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\nunit.framework.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Helpers.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Mvc.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Optimization.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.Razor.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Deployment.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Razor.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Antlr3.Runtime.pdb
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\EntityFramework.SqlServer.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Core.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Facebook.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Cookies.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.OAuth.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Google.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.Twitter.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.csprojResolveAssemblyReference.cache
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\obj\Debug\PPC Rental 2017.pdb
+>>>>>>> 68e8e2df44ec102aee70b46f856185f5aa274593
+>>>>>>> 098617a0fb801653756281eee33a1780cb9e94bb

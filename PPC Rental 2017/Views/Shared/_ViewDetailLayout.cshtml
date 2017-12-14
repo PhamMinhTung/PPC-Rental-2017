@@ -22,37 +22,49 @@
                         <a class="navbar" href="#"></a>
                     </div>
                     <ul class="nav navbar-nav" style="padding: 1em;">
-                        <li>
-                            <a href="~/Home/Index" style="padding-left: 45px;border-top-width: 2em;color : #d9ecf7">Trang Chủ </a>
-                        </li>
-                        <li>
-                            <a href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">Đăng dự án</a>
-                        </li>
+                        <li><a href="~/Home/Index" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Trang chủ</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
-                                Loại dự án
+                                Giới thiệu
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" style="list-style-type: none;">
                                 <li>
-                                    <a href="#">Appartment</a>
+                                    <a href="#">About us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Villa</a>
-                                </li>
-                                <li>
-                                    <a href="#">Office</a>
-                                </li>
-                                <li>
-                                    <a href="#">House</a>
+                                    <a href="#">Contact us</a>
                                 </li>
                             </ul>
 
                         </li>
-                        <li><a href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">Giới thiệu</a></li>
+                        @if (Session["UserID"] == null)
+                        {
 
-                        <li><a href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">Register</a></li>
-                        <li><a href="#" class="signup" data-toggle="modal" data-target="#modal-signup" style="padding-left:45px;  color : #d9ecf7"><span><strong>Sign In</strong></span></a></li>
+                            <li><a href="~/Users/Register" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng kí</a></li>
+                            <li><a href="~/Users/Login" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7"><span><strong>Đăng nhập</strong></span></a></li>
+                        }
+                        else
+                        {
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
+                                    Xin chào @Session["FullName"]
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="list-style-type: none;">
+                                    <li>
+                                        <a href="~/Users/ChangePass">Change Pass</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <a href="~/Users/Logout/@Session["UserID"]" style="padding-left: 45px;border-top-width:2em; color:#d9ecf7">Logout</a>
+                            </li>
+
+                        }
+
                     </ul>
                 </div>
             </nav>

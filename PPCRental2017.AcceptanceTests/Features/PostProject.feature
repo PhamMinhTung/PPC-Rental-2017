@@ -22,4 +22,4 @@ Scenario: Post Project successfull
 	| Bathroom      | 2                                            |
 	| Packing Place | 1                                            |
 	And I press create
-	Then System show message successfull
+	Then System show Home page

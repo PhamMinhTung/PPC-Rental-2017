@@ -6,8 +6,12 @@
     <WebStackScaffolding_IsLayoutPageSelected>False</WebStackScaffolding_IsLayoutPageSelected>
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>False</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
+<<<<<<< HEAD
     <WebStackScaffolding_LayoutPageFile>
     </WebStackScaffolding_LayoutPageFile>
+=======
+    <WebStackScaffolding_LayoutPageFile>~/Areas/Admin/Views/Shared/_AdminLayout.cshtml</WebStackScaffolding_LayoutPageFile>
+>>>>>>> 098617a0fb801653756281eee33a1780cb9e94bb
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <Controller_SelectedScaffolderID>MvcControllerEmptyScaffolder</Controller_SelectedScaffolderID>
