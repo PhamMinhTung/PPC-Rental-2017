@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ContactUs</title>
+    <link href="~/Content/Contact Us/Contact Us.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h3>Contact Us</h3>
+            <h4>Contact us if you have questions</h4>
+            <fieldset>
+                <input placeholder="Your name"  name="Name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" name="Email" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number" name="Phone" type ="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Address" name="Address" type="text" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your message here...." name="Message" tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <p class="copyright"> <a href="~/Home/Index">Trang chủ</a></p>
+        </form>
+    </div>
+</body>
+</html>

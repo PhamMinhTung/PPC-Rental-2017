@@ -1,5 +1,6 @@
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.csprojResolveAssemblyReference.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.csproj.CoreCompileInputs.cache
+<<<<<<< HEAD
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\bin\Debug\ApplicationInsights.config
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\bin\Debug\roslyn\csc.exe
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -65,3 +66,6 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.Acc
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.pdb
+=======
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptanceTests\obj\Debug\PPCRental2017.AcceptanceTests.csprojResolveAssemblyReference.cache
+>>>>>>> 68e8e2df44ec102aee70b46f856185f5aa274593

@@ -20,7 +20,32 @@ C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.Acc
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csproj.CoreCompileInputs.cache
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb
+<<<<<<< HEAD
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.xml
 C:\Users\Quang Ty\source\repos\New Git Project\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\EntityFramework.SqlServer.xml
+=======
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.dll.config
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\PPCRental2017.AcceptantTests.Common.pdb
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\Newtonsoft.Json.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Helpers.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Mvc.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Razor.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Razor.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\TechTalk.SpecFlow.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\Newtonsoft.Json.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Helpers.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Mvc.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.Razor.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\bin\Debug\System.Web.WebPages.Razor.xml
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.csprojResolveAssemblyReference.cache
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPCRental2017.AcceptantTests.Common\obj\Debug\PPCRental2017.AcceptantTests.Common.pdb
+>>>>>>> 68e8e2df44ec102aee70b46f856185f5aa274593
