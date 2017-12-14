@@ -48,6 +48,7 @@ D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.
 D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Deployment.dll
 D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.dll
 D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\System.Web.WebPages.Razor.dll
+D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\TechTalk.SpecFlow.dll
 D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\WebGrease.dll
 D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.DependencyCollector.xml
 D:\HK1-Năm 3\Final Project\Code\PPC-Rental-2017\PPC Rental 2017\bin\Microsoft.AI.ServerTelemetryChannel.xml
