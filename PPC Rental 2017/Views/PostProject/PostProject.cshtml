@@ -49,7 +49,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.PROPERTY_TYPE, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Property_ID",
+                @Html.DropDownListFor(model => model.PropertyType_ID,
                 new SelectList(db.PROPERTY_TYPE, "ID", "CodeType"), "Choose...", new { @class = "form-control" })
             </div>
         </div>
@@ -101,10 +101,19 @@
                 @Html.ValidationMessageFor(model => model.PackingPlace, "", new { @class = "text-danger" })
             </div>
         </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.STREET, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Street_ID,
+                new SelectList(db.STREETs, "ID", "StreetName"), "Choose Ward...", new { @class = "form-control" })
+            </div>
+        </div>
+
         <div class="form-group">
             @Html.LabelFor(model => model.WARD, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Quan_ID",
+                @Html.DropDownListFor(model => model.Ward_ID,
                 new SelectList(db.WARDs, "ID", "WardName"), "Choose Ward...", new { @class = "form-control" })
             </div>
         </div>
@@ -112,23 +121,39 @@
         <div class="form-group">
             @Html.LabelFor(model => model.DISTRICT, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Distric_ID",
+                @Html.DropDownListFor(model => model.District_ID,
                 new SelectList(db.DISTRICTs, "ID", "DistrictName"), "Choose District...", new { @class = "form-control" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.PROPERTY_FEATURE, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("Status_ID",
-                new SelectList(db.FEATUREs, "ID", "FeatureName"), "Choose Feature...", new { @class = "form-control" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.PROPERTY_FEATURE, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+
+                    @foreach (var item in db.FEATUREs)
+                {
+                        <div class="input-group col-md-3" style="margin:7px;padding : 0; margin-left:20px;">
+                            <span class="input-group-addon">@item.FeatureName </span>
+                            <input style="margin-left: 4em;" value="@item.ID" type="checkbox" name="featuresall" class="form-control-radio" />
+                        </div>
+                    }
+                </div>
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Đăng Bài" class="btn btn-default" />
+                <!--<select type="submit">
+                    <option value="Đăng Bài" class="btn btn-default">Đăng Bài</option>
+                    <option value="Lưu Nháp" class="btn btn-default">Lưu Nháp</option>
+                </select>-->
+                <!--<input type="submit" onclick="alert('Chúc mừng bạn đăng bài thành công!')" value="Chưa Duyệt">-->
 
+                <select name="Status_ID" onchange="this.form.submit()">
+                    <option value="1">Chưa duyệt</option>
+                    <option value="2">Lưu Nháp</option>
+                </select>
             </div>
         </div>
     </div>
