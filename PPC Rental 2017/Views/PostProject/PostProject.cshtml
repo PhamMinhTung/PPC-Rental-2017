@@ -69,6 +69,13 @@
                 @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
             </div>
         </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.UnitPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                <input class="form-control" type="text" placeholder="VND" disabled />
+                @Html.ValidationMessageFor(model => model.UnitPrice, "", new { @class = "text-danger" })
+            </div>
+        </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.Area, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -143,21 +150,35 @@
         </div>
 
         <div class="form-group">
+            <div><a class=" btn btn-default" href="~/ViewListofProject/Unapproved" style="color:gray">Thoát</a></div>
+            <div class="col-md-10">
+                
+            </div>
+        </div>
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <!--<select type="submit">
                     <option value="Đăng Bài" class="btn btn-default">Đăng Bài</option>
                     <option value="Lưu Nháp" class="btn btn-default">Lưu Nháp</option>
                 </select>-->
                 <!--<input type="submit" onclick="alert('Chúc mừng bạn đăng bài thành công!')" value="Chưa Duyệt">-->
-
-                <select name="Status_ID" onchange="this.form.submit()">
-                    <option value="1">Chưa duyệt</option>
-                    <option value="2">Lưu Nháp</option>
-                </select>
+                <button type="submit" id="1">Chưa duyệt</button>
+                <button id="2" formaction="SaveDrafts" formmethod="post">Lưu nháp</button>
+                
+                
             </div>
         </div>
     </div>
 }
+
+$('#button1').click(function(){
+   $('#1').attr('action', 'Unapproved');
+}); 
+
+
+$('#button2').click(function(){
+   $('#2').attr('action', 'SaveDrafts');
+});
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

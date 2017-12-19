@@ -19,8 +19,6 @@ namespace PPC_Rental_2017.Controllers
         [HttpPost]
         public ActionResult Create(PROPERTY property, HttpPostedFileBase Avatar, HttpPostedFileBase Image, List<int> featuresall)
         {
-            //string pefe = "";
-
             string avatar = "";
 
             if (Avatar.ContentLength > 0)
@@ -38,6 +36,7 @@ namespace PPC_Rental_2017.Controllers
                 var path = Path.Combine(Server.MapPath("~/Images"), filename);
                 Image.SaveAs(path);
                 image = filename;
+
             }
             var post = new PROPERTY();
             post.PropertyName = property.PropertyName;
@@ -75,7 +74,7 @@ namespace PPC_Rental_2017.Controllers
             }
             db.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Unapproved", "ViewListofProject");
         }
     }
 }

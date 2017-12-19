@@ -72,11 +72,7 @@ namespace PPC_Rental_2017.Controllers
             var project = db.PROPERTies.FirstOrDefault(t => t.ID == id);
             return View(project);
         }
-        public ActionResult ViewDetailProject()
-        {
-            var project = db.PROPERTies.FirstOrDefault(t => t.ID == id);
-            return View(project);
-        }
+    
             
     }
 }

@@ -58,33 +58,33 @@
                     <img alt="Brand" src="~/Images/EWMLogoHome.png" style="width:100%;height:100%">
                 </a>
             </div>
-           
+
             <div class="collapse navbar-collapse" style="margin-bottom:5px;margin-top:25px">
                 <ul class="nav navbar-nav navbar-right">
-                   
 
-                   <!-- <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">
-                            Loại dự án
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" style="list-style-type: none;">
-                            <li>
-                                <a href="#">Appartment</a>
-                            </li>
-                            <li>
-                                <a href="#">Villa</a>
-                            </li>
-                            <li>
-                                <a href="#">Office</a>
-                            </li>
-                            <li>
-                                <a href="#">House</a>
-                            </li>
-                        </ul>
 
-                    </li>
-                       -->
+                    <!-- <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">
+                             Loại dự án
+                             <span class="caret"></span>
+                         </a>
+                         <ul class="dropdown-menu" style="list-style-type: none;">
+                             <li>
+                                 <a href="#">Appartment</a>
+                             </li>
+                             <li>
+                                 <a href="#">Villa</a>
+                             </li>
+                             <li>
+                                 <a href="#">Office</a>
+                             </li>
+                             <li>
+                                 <a href="#">House</a>
+                             </li>
+                         </ul>
+
+                     </li>
+                        -->
                     <li><a href="~/Home/Index" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Trang chủ</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
@@ -101,6 +101,8 @@
                         </ul>
 
                     </li>
+
+                    <li><a href="~/NewsAndEvents/NewsAndEvents" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Tin tức và Sự kiện</a></li>
                     @if (Session["UserID"] == null)
                     {
 
@@ -121,19 +123,15 @@
                             </ul>
 
                         </li>
-                      
-                                <li>
-                                    <a href="~/Users/Logout/@Session["UserID"]" style="padding-left: 45px;border-top-width:2em; color:#d9ecf7">Logout</a>
-                                </li>
+
+                        <li>
+                            <a href="~/Users/Logout/@Session["UserID"]" style="padding-left: 45px;border-top-width:2em; color:#d9ecf7">Logout</a>
+                        </li>
 
                     }
 
-<<<<<<< HEAD
-                    
-=======
-                   
->>>>>>> a4e443a5f80de68496bd630acef3e5b97aa175ba
-                   
+
+
 
                 </ul>
             </div>
@@ -193,7 +191,7 @@
         <br />
         <br />
 
-        <footer id="colophon" role="contentinfo" style=      background-image url(https//placeinsaigon.com/wp-content/uploads/2017/09/bg-footer.png) " class="  footer_back_repeat_no  ">
+        <footer id="colophon" role="contentinfo" style=background-image url(https//placeinsaigon.com/wp-content/uploads/2017/09/bg-footer.png) " class="  footer_back_repeat_no  ">
         <div id="footer-widget-area" class="row ">
             <div id="second" class="widget-area col-md-4">
                 <ul class="xoxo">
