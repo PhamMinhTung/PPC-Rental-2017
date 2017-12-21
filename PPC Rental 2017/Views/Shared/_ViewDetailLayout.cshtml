@@ -11,64 +11,67 @@
 <body>
 
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="col-md-4">
-            <img src="~/Images/EWmLogoHome.png" style="width: 200px; height: auto;padding-left: 100px;" alt="">
-        </div>
-        <div class="col-md-8">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <div class="navbar-right">
-                        <a class="navbar" href="#"></a>
-                    </div>
-                    <ul class="nav navbar-nav" style="padding: 1em;">
-                        <li><a href="~/Home/Index" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Trang chủ</a></li>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="~/Home/Index" style="width:95px;height:95px">
+                    <img alt="Brand" src="~/Images/EWMLogoHome.png" style="width:100%;height:100%">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" style="margin-bottom:5px;margin-top:25px">
+                <ul class="nav navbar-nav navbar-right">                    
+                    <li><a href="~/Home/Index" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
+                            Giới thiệu
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="list-style-type: none;">
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="~/Home/Contact">Contact us</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    @if (Session["UserID"] == null)
+                    {
+
+                        <li><a href="~/Users/Register" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng kí</a></li>
+                        <li><a href="~/Users/Login" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7"><span><strong>Đăng nhập</strong></span></a></li>
+                    }
+                    else
+                    {
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
-                                Giới thiệu
+                                Xin chào @Session["FullName"]
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" style="list-style-type: none;">
                                 <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact us</a>
+                                    <a href="~/Users/ChangePass">Change Pass</a>
                                 </li>
                             </ul>
 
                         </li>
-                        @if (Session["UserID"] == null)
-                        {
 
-                            <li><a href="~/Users/Register" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng kí</a></li>
-                            <li><a href="~/Users/Login" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7"><span><strong>Đăng nhập</strong></span></a></li>
-                        }
-                        else
-                        {
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
-                                    Xin chào @Session["FullName"]
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu" style="list-style-type: none;">
-                                    <li>
-                                        <a href="~/Users/ChangePass">Change Pass</a>
-                                    </li>
-                                </ul>
+                        <li>
+                            <a href="~/Users/Logout/@Session["UserID"]" style="padding-left: 45px;border-top-width:2em; color:#d9ecf7">Logout</a>
+                        </li>
 
-                            </li>
+                    }
 
-                            <li>
-                                <a href="~/Users/Logout/@Session["UserID"]" style="padding-left: 45px;border-top-width:2em; color:#d9ecf7">Logout</a>
-                            </li>
 
-                        }
 
-                    </ul>
-                </div>
-            </nav>
+
+                </ul>
+            </div>
         </div>
+    </nav>
+
     </div>
     </div>
     </img>

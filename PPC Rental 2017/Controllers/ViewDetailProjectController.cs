@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using PPC_Rental_2017.Models;
 
-namespace PPC_Rental.Controllers
+namespace PPC_Rental_2017.Controllers
 {
     public class ViewDetailProjectController : Controller
     {

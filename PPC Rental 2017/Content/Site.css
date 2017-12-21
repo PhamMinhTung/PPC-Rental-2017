@@ -122,7 +122,28 @@ a {
     border-color: #d43f3a !important;
 }
 
-.col-sm-12 {
+/*.col-sm-12 {
     width: 100%;
     position: absolute !important;
+}*/
+
+.line-buttonup {
+    position: relative;
 }
+
+.line-buttonup hr {
+    position: absolute;
+    margin: 0px !important;
+    top: 50%;
+    width: 100%;
+}
+
+.line-buttonup a {
+    position: relative;
+}
+
+/*.buttonup {
+    position: absolute;
+    left: 3%;
+    /*top: 5%;*/
+}*/

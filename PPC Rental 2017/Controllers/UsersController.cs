@@ -22,22 +22,30 @@ namespace PPC_Rental_2017.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(string username, string password)
+        public ActionResult Login(string username, string password,SignIn model)
         {
-            var user = db.USERs.FirstOrDefault(x => x.Email == username);
-            if (user != null)
+            if (ModelState.IsValid)
             {
-                if (user.Password.Equals(password))
+                var user = db.USERs.FirstOrDefault(x => x.Email == username);
+                if (user != null)
                 {
-                    Session["FullName"] = user.FullName;
-                    Session["UserID"] = user.ID;
-                    return RedirectToAction("Index", "Home");
-                }
-                else
-                {
-                    ViewBag.mgs = "Tài khoản không tồn tại";
-                }
+                    if (user.Password.Equals(password))
+                    {
+                        Session["FullName"] = user.FullName;
+                        Session["UserID"] = user.ID;
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        ViewBag.mgs = "Tài khoản không tồn tại";
+                    }
 
+                }
+                return View();
+            }
+            else
+            {
+               
             }
             return View();
         }

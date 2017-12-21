@@ -144,6 +144,7 @@
     </Reference>
     <Reference Include="TechTalk.SpecFlow, Version=2.2.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
       <HintPath>..\packages\SpecFlow.2.2.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
@@ -489,12 +490,9 @@
     <Content Include="Views\Users\ForgetComplete.cshtml" />
     <Content Include="Views\PostProject\PostProject.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayout.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Home\Filter.cshtml" />
     <Content Include="Views\Home\ViewDetailProject.cshtml" />
-=======
     <Content Include="Views\Contact\Contact.cshtml" />
->>>>>>> 098617a0fb801653756281eee33a1780cb9e94bb
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
