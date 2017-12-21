@@ -12,8 +12,6 @@ namespace PPC_Rental_2017.Controllers
         // GET: NewsAndEvents
         public ActionResult NewsAndEvents()
         {
-
-           
             return View();
         }
     }

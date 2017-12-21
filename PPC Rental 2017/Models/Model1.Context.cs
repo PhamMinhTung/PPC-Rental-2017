@@ -31,7 +31,6 @@ namespace PPC_Rental_2017.Models
         public virtual DbSet<CONTACT> CONTACTs { get; set; }
         public virtual DbSet<DISTRICT> DISTRICTs { get; set; }
         public virtual DbSet<FEATURE> FEATUREs { get; set; }
-        public virtual DbSet<News_and_Events> News_and_Events { get; set; }
         public virtual DbSet<PROJECT_STATUS> PROJECT_STATUS { get; set; }
         public virtual DbSet<PROPERTY> PROPERTies { get; set; }
         public virtual DbSet<PROPERTY_FEATURE> PROPERTY_FEATURE { get; set; }
@@ -40,6 +39,7 @@ namespace PPC_Rental_2017.Models
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<USER> USERs { get; set; }
         public virtual DbSet<WARD> WARDs { get; set; }
+        public virtual DbSet<News_and_Events> News_and_Events { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {

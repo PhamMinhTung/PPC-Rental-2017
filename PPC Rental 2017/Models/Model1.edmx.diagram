@@ -9,7 +9,6 @@
         <EntityTypeShape EntityType="team15Model.CONTACT" Width="1.5" PointX="3" PointY="5.25" />
         <EntityTypeShape EntityType="team15Model.DISTRICT" Width="1.5" PointX="3.75" PointY="1.375" />
         <EntityTypeShape EntityType="team15Model.FEATURE" Width="1.5" PointX="6" PointY="1.125" />
-        <EntityTypeShape EntityType="team15Model.News_and_Events" Width="1.5" PointX="3" PointY="16.125" />
         <EntityTypeShape EntityType="team15Model.PROJECT_STATUS" Width="1.5" PointX="3.75" PointY="21.875" />
         <EntityTypeShape EntityType="team15Model.PROPERTY" Width="1.5" PointX="6" PointY="4.625" />
         <EntityTypeShape EntityType="team15Model.PROPERTY_FEATURE" Width="1.5" PointX="8.25" PointY="7" />
@@ -23,7 +22,6 @@
         <AssociationConnector Association="team15Model.FK_STREET_DISTRICT" />
         <AssociationConnector Association="team15Model.FK_WARD_DISTRICT" />
         <AssociationConnector Association="team15Model.FK_PROPERTY_FEATURE_FEATURE" />
-        <AssociationConnector Association="team15Model.FK_News_and_Events_USER" />
         <AssociationConnector Association="team15Model.FK_PROPERTY_PROJECT_STATUS" />
         <AssociationConnector Association="team15Model.FK_PROPERTY_FEATURE_PROPERTY" />
         <AssociationConnector Association="team15Model.FK_PROPERTY_PROPERTY_TYPE" />
@@ -31,6 +29,7 @@
         <AssociationConnector Association="team15Model.FK_PROPERTY_USER" />
         <AssociationConnector Association="team15Model.FK_PROPERTY_USER1" />
         <AssociationConnector Association="team15Model.FK_PROPERTY_WARD" />
+        <EntityTypeShape EntityType="team15Model.News_and_Events" Width="1.5" PointX="10.25" PointY="3.375" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

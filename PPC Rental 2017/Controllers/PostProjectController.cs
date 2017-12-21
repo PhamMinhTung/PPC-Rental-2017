@@ -17,7 +17,7 @@ namespace PPC_Rental_2017.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Create(PROPERTY property, HttpPostedFileBase Avatar, HttpPostedFileBase Image, List<int> featuresall)
+        public ActionResult Create(PROPERTY property, HttpPostedFileBase Avatar, HttpPostedFileBase Image, List<int> featuresall,string viewlist)
         {
             string avatar = "";
 
@@ -27,7 +27,7 @@ namespace PPC_Rental_2017.Controllers
                 var filenameav = Path.GetFileName(Avatar.FileName);
                 var path = Path.Combine(Server.MapPath("~/Images"), filenameav);
                 Avatar.SaveAs(path);
-                avatar = filenameav;
+                avatar = Avatar.FileName;
             }
             string image = "";
             if (Image.ContentLength > 0)
@@ -35,21 +35,21 @@ namespace PPC_Rental_2017.Controllers
                 var filename = Path.GetFileName(Image.FileName);
                 var path = Path.Combine(Server.MapPath("~/Images"), filename);
                 Image.SaveAs(path);
-                image = filename;
+                image = Image.FileName;
 
             }
             var post = new PROPERTY();
             post.PropertyName = property.PropertyName;
             post.Area = property.Area;
-            post.Avatar = property.Avatar;
+            post.Avatar = avatar;
             post.BathRoom = property.BathRoom;
             post.BedRoom = property.BedRoom;
             post.Content = property.Content;
-            post.Images = property.Images;
+            post.Images = image;
             post.PackingPlace = property.PackingPlace;
             post.Price = property.Price;
             post.PROJECT_STATUS = property.PROJECT_STATUS;
-
+            post.Status_ID = int.Parse(viewlist) ; 
             post.UnitPrice = property.UnitPrice;
             post.Ward_ID = property.Ward_ID;
             post.WARD = property.WARD;
@@ -60,7 +60,7 @@ namespace PPC_Rental_2017.Controllers
             post.PROPERTY_TYPE = property.PROPERTY_TYPE;
             post.PropertyType_ID = property.PropertyType_ID;
             post.Sale_ID = property.Sale_ID;
-            //post.UserID = int.Parse(Session["UserID"].ToString());
+            post.UserID = int.Parse(Session["UserID"].ToString());
             post.Created_at = DateTime.Now;
             db.PROPERTies.Add(post);
             db.SaveChanges();
@@ -73,8 +73,15 @@ namespace PPC_Rental_2017.Controllers
                 db.PROPERTY_FEATURE.Add(pf);
             }
             db.SaveChanges();
-
-            return RedirectToAction("Unapproved", "ViewListofProject");
+            if (int.Parse(viewlist)==1)
+            {
+                return RedirectToAction("Unapproved", "ViewListofProject");
+            }
+            else
+            {
+                return RedirectToAction("SaveDrafts", "ViewListofProject");
+            }
+              
         }
     }
 }

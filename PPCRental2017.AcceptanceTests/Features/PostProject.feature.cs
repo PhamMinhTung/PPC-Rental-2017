@@ -91,7 +91,7 @@ namespace PPCRental2017.AcceptanceTests.Features
                         "Email",
                         "Password"});
             table1.AddRow(new string[] {
-                        "lithihuyenchau@gmail.com",
+                        "vobichto@gmail.com",
                         "123456"});
 #line 6
  testRunner.Given("I am login", ((string)(null)), table1, "Given ");

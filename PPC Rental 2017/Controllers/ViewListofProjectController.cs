@@ -15,14 +15,18 @@ namespace PPC_Rental_2017.Controllers
         {
             return View();
         }
+        
         public ActionResult Unapproved(string status= "Chưa duyệt")
         {
-            var viewlist = m.PROPERTies.Where(p => p.PROJECT_STATUS.Status_Name == status).ToList();
+
+            int a = int.Parse(Session["UserID"].ToString());
+            var viewlist = m.PROPERTies.Where(p => p.PROJECT_STATUS.Status_Name == status && p.UserID == a && p.Status_ID == 1).ToList();
             return View(viewlist);
         }
         public ActionResult SaveDrafts(string status = "Lưu nháp")
         {
-            var viewlist = m.PROPERTies.Where(p => p.PROJECT_STATUS.Status_Name == status).ToList();
+            int b = int.Parse(Session["UserID"].ToString());
+            var viewlist = m.PROPERTies.Where(p => p.PROJECT_STATUS.Status_Name == status && p.UserID == b && p.Status_ID==2).ToList();
             return View(viewlist);
         }
     }

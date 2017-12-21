@@ -52,7 +52,6 @@
           <Property Name="Title" Type="nvarchar" MaxLength="50" />
           <Property Name="ShortDescription" Type="nvarchar(max)" />
           <Property Name="Images" Type="varchar" MaxLength="100" />
-          <Property Name="Sale_ID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="PROJECT_STATUS">
           <Key>
@@ -159,18 +158,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_News_and_Events_USER">
-          <End Role="USER" Type="Self.USER" Multiplicity="1" />
-          <End Role="News_and_Events" Type="Self.News_and_Events" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USER">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="News_and_Events">
-              <PropertyRef Name="Sale_ID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_PROPERTY_DISTRICT">
           <End Role="DISTRICT" Type="Self.DISTRICT" Multiplicity="0..1" />
           <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="*" />
@@ -196,7 +183,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_PROPERTY_FEATURE_PROPERTY">
-          <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="0..1" />
+          <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="PROPERTY_FEATURE" Type="Self.PROPERTY_FEATURE" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="PROPERTY">
@@ -352,10 +341,6 @@
             <End Role="USER" EntitySet="USER" />
             <End Role="CONTACT" EntitySet="CONTACT" />
           </AssociationSet>
-          <AssociationSet Name="FK_News_and_Events_USER" Association="Self.FK_News_and_Events_USER">
-            <End Role="USER" EntitySet="USER" />
-            <End Role="News_and_Events" EntitySet="News_and_Events" />
-          </AssociationSet>
           <AssociationSet Name="FK_PROPERTY_DISTRICT" Association="Self.FK_PROPERTY_DISTRICT">
             <End Role="DISTRICT" EntitySet="DISTRICT" />
             <End Role="PROPERTY" EntitySet="PROPERTY" />
@@ -440,7 +425,6 @@
           <EntitySet Name="CONTACTs" EntityType="team15Model.CONTACT" />
           <EntitySet Name="DISTRICTs" EntityType="team15Model.DISTRICT" />
           <EntitySet Name="FEATUREs" EntityType="team15Model.FEATURE" />
-          <EntitySet Name="News_and_Events" EntityType="team15Model.News_and_Events" />
           <EntitySet Name="PROJECT_STATUS" EntityType="team15Model.PROJECT_STATUS" />
           <EntitySet Name="PROPERTies" EntityType="team15Model.PROPERTY" />
           <EntitySet Name="PROPERTY_FEATURE" EntityType="team15Model.PROPERTY_FEATURE" />
@@ -468,10 +452,6 @@
           <AssociationSet Name="FK_PROPERTY_FEATURE_FEATURE" Association="team15Model.FK_PROPERTY_FEATURE_FEATURE">
             <End Role="FEATURE" EntitySet="FEATUREs" />
             <End Role="PROPERTY_FEATURE" EntitySet="PROPERTY_FEATURE" />
-          </AssociationSet>
-          <AssociationSet Name="FK_News_and_Events_USER" Association="team15Model.FK_News_and_Events_USER">
-            <End Role="USER" EntitySet="USERs" />
-            <End Role="News_and_Events" EntitySet="News_and_Events" />
           </AssociationSet>
           <AssociationSet Name="FK_PROPERTY_PROJECT_STATUS" Association="team15Model.FK_PROPERTY_PROJECT_STATUS">
             <End Role="PROJECT_STATUS" EntitySet="PROJECT_STATUS" />
@@ -501,6 +481,7 @@
             <End Role="WARD" EntitySet="WARDs" />
             <End Role="PROPERTY" EntitySet="PROPERTies" />
           </AssociationSet>
+          <EntitySet Name="News_and_Events" EntityType="team15Model.News_and_Events" />
           </EntityContainer>
         <ComplexType Name="sp_helpdiagramdefinition_Result">
           <Property Type="Int32" Name="version" Nullable="true" />
@@ -556,17 +537,6 @@
           <Property Name="FeatureName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="Boolean" />
           <NavigationProperty Name="PROPERTY_FEATURE" Relationship="team15Model.FK_PROPERTY_FEATURE_FEATURE" FromRole="FEATURE" ToRole="PROPERTY_FEATURE" />
-        </EntityType>
-        <EntityType Name="News_and_Events">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="ShortDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Images" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="Sale_ID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="USER" Relationship="team15Model.FK_News_and_Events_USER" FromRole="News_and_Events" ToRole="USER" />
         </EntityType>
         <EntityType Name="PROJECT_STATUS">
           <Key>
@@ -666,7 +636,6 @@
           <Property Name="Role" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="Boolean" />
           <NavigationProperty Name="CONTACTs" Relationship="team15Model.FK_CONTACT_USER" FromRole="USER" ToRole="CONTACT" />
-          <NavigationProperty Name="News_and_Events" Relationship="team15Model.FK_News_and_Events_USER" FromRole="USER" ToRole="News_and_Events" />
           <NavigationProperty Name="PROPERTies" Relationship="team15Model.FK_PROPERTY_USER" FromRole="USER" ToRole="PROPERTY" />
           <NavigationProperty Name="PROPERTies1" Relationship="team15Model.FK_PROPERTY_USER1" FromRole="USER" ToRole="PROPERTY" />
         </EntityType>
@@ -738,18 +707,6 @@
             </Principal>
             <Dependent Role="PROPERTY_FEATURE">
               <PropertyRef Name="Feature_ID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_News_and_Events_USER">
-          <End Type="team15Model.USER" Role="USER" Multiplicity="1" />
-          <End Type="team15Model.News_and_Events" Role="News_and_Events" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="USER">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="News_and_Events">
-              <PropertyRef Name="Sale_ID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -837,6 +794,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="News_and_Events">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ShortDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Images" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -906,17 +872,6 @@
               <MappingFragment StoreEntitySet="FEATURE">
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="FeatureName" ColumnName="FeatureName" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="News_and_Events">
-            <EntityTypeMapping TypeName="team15Model.News_and_Events">
-              <MappingFragment StoreEntitySet="News_and_Events">
-                <ScalarProperty Name="Sale_ID" ColumnName="Sale_ID" />
-                <ScalarProperty Name="Images" ColumnName="Images" />
-                <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
-                <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -1018,6 +973,16 @@
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="District_ID" ColumnName="District_ID" />
                 <ScalarProperty Name="WardName" ColumnName="WardName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News_and_Events">
+            <EntityTypeMapping TypeName="team15Model.News_and_Events">
+              <MappingFragment StoreEntitySet="News_and_Events">
+                <ScalarProperty Name="Images" ColumnName="Images" />
+                <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -4,8 +4,8 @@ Feature: PostProject
 
 Background:
 	Given I am login
-		| Email                    | Password |
-		| lithihuyenchau@gmail.com | 123456   |
+		| Email              | Password |
+		| vobichto@gmail.com | 123456   |
 Scenario: Post Project successfull
 	When I click button post
 	And I input value into form

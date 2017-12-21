@@ -1,4 +1,4 @@
-﻿@using PPC_Rental_2017.Models;
+﻿@using PPC_Rental_2017.Models
 @model IEnumerable<PPC_Rental_2017.Models.News_and_Events>
 @{
     Layout = null;
@@ -104,18 +104,18 @@
         <div class="w3-row w3-padding-64" >
             <div class="w3-col m6 w3-padding-large w3-hide-small">
                 @{int count = 0;}
-                @foreach (var item in Model)
+                @foreach (var item in db.News_and_Events )
                 {
-                    <img src="@item.Images" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
-
-
-                    <div class="w3-col m6 w3-padding-large">
-                        <h1 class="w3-center">@item.Title</h1><br>
-                        <h5 class="w3-center">Tradition since 1889</h5>
-                        <p class="w3-large">@item.ShortDescription<span class="w3-tag w3-light-grey">seasonal</span> coconuts.</p>
-                        <p class="w3-large" style="bottom:5px; position:absolute"><a href="#" class="btn btn-primary" role="button">Xem thêm</a>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="~/Images/@item.Images" class="media-object" style="width:600px ; height: auto;">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">@item.Title</h3>
+                            <p>@item.ShortDescription.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Xem thêm</a></p>
+                        </div>
                     </div>
-
                     count++;
                     if (count == 3)
                     {
