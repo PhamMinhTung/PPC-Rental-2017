@@ -1,0 +1,77 @@
+﻿@model IEnumerable<PPC_Rental_2017.Models.PROPERTY>
+@{
+    ViewBag.Title = "SaveDrafts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="nav navbar-btn">
+    <div class="navbar-form navbar-right">
+        <a class=" btn btn-default" href="~/ViewListofProject/Unapproved" style="color:crimson">Chưa duyệt</a>
+        <a class=" btn btn-default" href="~/ViewListofProject/SaveDrafts" style="color:cornflowerblue">Lưu nháp</a>
+    </div>
+</div>
+<div><a class=" btn btn-default" href="~/PostProject/PostProject" style="color:cadetblue">Đăng dự án</a></div>
+<div style="font-size:22px;border-bottom:4px solid #ff5c01;font-weight:bold;margin-top:1%"></div>
+
+<h2> Danh sách các bài lưu nháp</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PropertyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROPERTY_TYPE.CodeType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Avatar)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DISTRICT.DistrictName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STREET.StreetName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WARD.WardName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROJECT_STATUS.Status_Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model.Where(p => p.UserID == int.Parse(Session["UserID"].ToString())))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PropertyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROPERTY_TYPE.CodeType)
+            </td>
+            <td>
+                <img src="~/Images/@item.Avatar" style="width: 50px;" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DISTRICT.DistrictName)
+            </td>  
+            <td>
+                @Html.DisplayFor(modelItem => item.STREET.StreetName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WARD.WardName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PROJECT_STATUS.Status_Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+    }
+
+</table>
+

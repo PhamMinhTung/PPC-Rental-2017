@@ -1,7 +1,63 @@
-﻿@{
+﻿@model IEnumerable<PPC_Rental_2017.Models.ABOUT_US>
+@{
     ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_AboutLayout.cshtml";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<link href="~/Content/About/landing-page.min.css" rel="stylesheet">
+
+
+<div class="intro-header">
+    <div class="home-below-menu">
+        <h2>Giới thiệu</h2>
+    </div>
+</div>
+@{ foreach (var item in Model) { 
+
+
+<div class="content-section-a">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-custom">
+                    <div class="panel-body panel-body-custom">
+                        <h1 style="text-align:center"><strong>WELCOME</strong></h1>
+
+                        <p style="text-align:justify">
+                           @item.Title
+                        </p>
+
+                        <p style="text-align:center"><img alt="" src="~/Images/About/About us.jpg"></p>
+
+                        <hr>
+                        <p>&nbsp;</p>
+                        <div class="col-sm-4">
+                            <h4 style="text-align:justify"><strong>ABOUT US</strong></h4>
+
+                            <p style="text-align:justify">@item.About</p>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <h4><strong>Sponsor</strong></h4>
+
+                            <p style="text-align:justify">@item.Sponsor</p>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <h4><strong>Team Development</strong></h4>
+
+                            <p style="text-align:justify">@item.Developer</p>
+
+                        </div>
+                        <hr>
+
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    }
+    }

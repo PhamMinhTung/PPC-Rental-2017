@@ -19,9 +19,8 @@ namespace PPC_Rental_2017.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            var about = db.ABOUT_US.ToList();
+            return View(about);
         }
 
         public ActionResult Contact()
@@ -72,6 +71,6 @@ namespace PPC_Rental_2017.Controllers
             var project = db.PROPERTies.FirstOrDefault(t => t.ID == id);
             return View(project);
         }
-     
+
     }
 }

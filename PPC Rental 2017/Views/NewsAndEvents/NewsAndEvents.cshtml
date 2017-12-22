@@ -1,0 +1,168 @@
+﻿@using PPC_Rental_2017.Models
+@model IEnumerable<PPC_Rental_2017.Models.News_and_Events>
+@{
+    Layout = null;
+    ViewBag.Title = "News Page";
+    var db = new team15Entities();
+}
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="~/Content/Icon/css/font-awesome.min.css">
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/Site.css" rel="stylesheet" />
+<style>
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+        border-left-width: 5px;
+        margin-left: 68px;
+        margin-right: 56px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+    }
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="~/Home/Index" style="width:95px;height:95px">
+                    <img alt="Brand" src="~/Images/EWMLogoHome.png" style="width:100%;height:100%">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" style="margin-bottom:5px;margin-top:25px">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="~/Home/Index" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
+                            Giới thiệu
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="list-style-type: none;">
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="~/Home/Contact">Contact us</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="~/Home/Index" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Tin tức và Sự kiện</a></li>
+                    @if (Session["UserID"] == null)
+                    {
+
+                        <li><a href="~/Users/Register" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7">Đăng kí</a></li>
+                        <li><a href="~/Users/Login" style="padding-left: 25px;border-top-width: 2em;  color : #d9ecf7"><span><strong>Đăng nhập</strong></span></a></li>
+                    }
+                    else
+                    {
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="padding-left: 45px;border-top-width: 2em;  color : #d9ecf7">
+                                Xin chào @Session["FullName"]
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" style="list-style-type: none;">
+                                <li>
+                                    <a href="~/Users/ChangePass">Change Pass</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li>
+                            <a href="~/Users/Logout/@Session["UserID"]" style="padding-left: 45px;border-top-width:2em; color:#d9ecf7">Logout</a>
+                        </li>
+
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <h1 class="w3-xxlarge">Le Catering</h1>
+        </div>
+    </header>
+
+    <!-- Page News and Events -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" >
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                @{int count = 0;}
+                @foreach (var item in db.News_and_Events )
+                {
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="~/Images/@item.Images" class="media-object" style="width:600px ; height: auto;">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">@item.Title</h3>
+                            <p>@item.ShortDescription.</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Xem thêm</a></p>
+                        </div>
+                    </div>
+                    count++;
+                    if (count == 3)
+                    {
+                        break;
+                    }
+                }
+            </div>
+        </div>
+        <hr>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="colophon" role="contentinfo" style=background-image url(https//placeinsaigon.com/wp-content/uploads/2017/09/bg-footer.png) " class="  footer_back_repeat_no  ">
+    <div id="footer-widget-area" class="row ">
+        <div id="second" class="widget-area col-md-4">
+            <ul class="xoxo">
+                <li id="text-8" class="widget-container widget_text">
+                    <h3 class="widget-title-footer">PPC Rental</h3><div class="textwidget">
+                        <div class="contact_sidebar_wrap">
+                            <p class="widget_contact_addr"><i class="fa fa-map-marker fa-lg"></i>Văn Lang University, HCMC</p>
+                            <p class="widget_contact_phone"><i class="fa fa-mobile-phone fa-lg"></i><a href="tel:">(+84) </a> – <a href="tel:+=84913321028">(+84) 913 321028</a></p>
+                            <p class="widget_contact_email"><i class="fa fa-envelope-o"></i><a href="mailto:info@team5P1D.com">info@team5P1D.com</a></p>
+                            <p class="widget_contact_url"><i class="fa fa-safari fa-lg"></i><a href="PPCRental.com">PPCRental.com</a></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <br /><!-- #second .widget-area -->
+
+        <div id="third" class="widget-area col-md-4">
+            <ul class="xoxo">
+                <li id="social_widget-2" class="widget-container social_sidebar"><h3 class="widget-title-footer" style="margin-top:1px">Connect With Us</h3><div class="social_sidebar_internal"><a href="https://www.facebook.com/ppcforrent/" target="_blank"><i class="fa fa-facebook  fa-fw"></i></a><a href="https://www.linkedin.com/ppcforrent/" target="_blank"><i class="fa fa-linkedin  fa-fw"></i></a><a href="https://www.youtube.com/ppcforrent/" target="_blank"><i class="fa fa-youtube  fa-fw"></i></a><a href="https://www.instagram.com/placeinsaigon/" target="_blank"><i class="fa fa-instagram  fa-fw"></i></a></div></li>
+
+            </ul>
+        </div>
+        <div id="third" class="widget-area col-md-4">
+            <ul class="xoxo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6333263659876!2d106.69113991431699!3d10.762716662390785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f16ad86371b%3A0x949d258c9508b1f2!2zxJDhuqFpIGjhu41jIFbEg24gTGFuZyBjxqEgc-G7nyAx!5e0!3m2!1svi!2s!4v1510742620005" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </ul>
+        </div><!-- #third .widget-area -->
+    </div>
+    <img src="~/Images/bg-footer.png" style="width: 100%">
+    </footer>
+</body>
+</html>

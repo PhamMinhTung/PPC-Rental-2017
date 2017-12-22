@@ -1,0 +1,67 @@
+﻿@using PPC_Rental_2017.Models;
+@model IEnumerable<PPC_Rental_2017.Models.ABOUT_US>
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <div>
+        <div class="col-md-1">
+            @*<img src="~/Images/ImageSale/if_scroll left_36560.png" style="width:38px; margin-left: 50%" />*@
+        </div><h1 style="margin-top: 10px;">About</h1>
+    </div>
+    <div class="card mb-3" style="margin-top: 10px;">
+        <div class="card-header">
+            <i class="fa fa-table"></i> Data Table
+        </div>
+        <div class="card-body" style="padding:0;">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Images</th>
+                            <th>About</th>
+                            <th>Sponsor</th>
+                            <th>Developer</th>
+                            <th>Công cụ</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Title</th>
+                            <th>Images</th>
+                            <th>About</th>
+                            <th>Sponsor</th>
+                            <th>Developer</th>
+                            <th>Công cụ</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (ABOUT_US item in Model)
+                        {
+                            <tr>
+                                <td style="width: 200px;">@item.Title.Substring(0, 90)...</td>
+                                <td style="width: 200px;">@item.Images.Substring(0, 12)...</td>
+                                <td style="width: 200px;">@item.About.Substring(0, 90)...</td>
+                                <td style="width: 200px;">@item.Sponsor.Substring(0, 10)...</td>
+                                <td style="width: 200px;">@item.Developer.Substring(0, 10)...</td>
+                                <td>
+                                    @*@Html.ActionLink("Detail", "", new { id = item.ID })|*@
+                                    @Html.ActionLink("Edit", "editabout", new { id = item.ID })
+                                </td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer small text-muted"></div>
+    </div>
+</body>
+</html>
+

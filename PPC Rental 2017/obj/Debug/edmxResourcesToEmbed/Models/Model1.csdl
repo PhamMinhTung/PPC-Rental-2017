@@ -31,7 +31,6 @@
       <Parameter Name="new_diagramname" Mode="In" Type="String" />
     </FunctionImport>
     <FunctionImport Name="sp_upgraddiagrams" />
-    <EntitySet Name="ABOUT_US" EntityType="team15Model.ABOUT_US" />
     <EntitySet Name="CONTACTs" EntityType="team15Model.CONTACT" />
     <EntitySet Name="DISTRICTs" EntityType="team15Model.DISTRICT" />
     <EntitySet Name="FEATUREs" EntityType="team15Model.FEATURE" />
@@ -64,10 +63,6 @@
       <End Role="FEATURE" EntitySet="FEATUREs" />
       <End Role="PROPERTY_FEATURE" EntitySet="PROPERTY_FEATURE" />
     </AssociationSet>
-    <AssociationSet Name="FK_News_and_Events_USER" Association="team15Model.FK_News_and_Events_USER">
-      <End Role="USER" EntitySet="USERs" />
-      <End Role="News_and_Events" EntitySet="News_and_Events" />
-    </AssociationSet>
     <AssociationSet Name="FK_PROPERTY_PROJECT_STATUS" Association="team15Model.FK_PROPERTY_PROJECT_STATUS">
       <End Role="PROJECT_STATUS" EntitySet="PROJECT_STATUS" />
       <End Role="PROPERTY" EntitySet="PROPERTies" />
@@ -96,6 +91,7 @@
       <End Role="WARD" EntitySet="WARDs" />
       <End Role="PROPERTY" EntitySet="PROPERTies" />
     </AssociationSet>
+    <EntitySet Name="ABOUT_US" EntityType="team15Model.ABOUT_US" />
   </EntityContainer>
   <ComplexType Name="sp_helpdiagramdefinition_Result">
     <Property Type="Int32" Name="version" Nullable="true" />
@@ -108,17 +104,6 @@
     <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
     <Property Type="Int32" Name="OwnerID" Nullable="false" />
   </ComplexType>
-  <EntityType Name="ABOUT_US">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" />
-    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Images" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
-    <Property Name="About" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Sponsor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Developer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-  </EntityType>
   <EntityType Name="CONTACT">
     <Key>
       <PropertyRef Name="ID" />
@@ -160,8 +145,6 @@
     <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ShortDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Images" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="Sale_ID" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="USER" Relationship="team15Model.FK_News_and_Events_USER" FromRole="News_and_Events" ToRole="USER" />
   </EntityType>
   <EntityType Name="PROJECT_STATUS">
     <Key>
@@ -261,7 +244,6 @@
     <Property Name="Role" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="Status" Type="Boolean" />
     <NavigationProperty Name="CONTACTs" Relationship="team15Model.FK_CONTACT_USER" FromRole="USER" ToRole="CONTACT" />
-    <NavigationProperty Name="News_and_Events" Relationship="team15Model.FK_News_and_Events_USER" FromRole="USER" ToRole="News_and_Events" />
     <NavigationProperty Name="PROPERTies" Relationship="team15Model.FK_PROPERTY_USER" FromRole="USER" ToRole="PROPERTY" />
     <NavigationProperty Name="PROPERTies1" Relationship="team15Model.FK_PROPERTY_USER1" FromRole="USER" ToRole="PROPERTY" />
   </EntityType>
@@ -336,18 +318,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_News_and_Events_USER">
-    <End Type="team15Model.USER" Role="USER" Multiplicity="1" />
-    <End Type="team15Model.News_and_Events" Role="News_and_Events" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="USER">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="News_and_Events">
-        <PropertyRef Name="Sale_ID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_PROPERTY_PROJECT_STATUS">
     <End Type="team15Model.PROJECT_STATUS" Role="PROJECT_STATUS" Multiplicity="0..1" />
     <End Type="team15Model.PROPERTY" Role="PROPERTY" Multiplicity="*" />
@@ -361,7 +331,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PROPERTY_FEATURE_PROPERTY">
-    <End Type="team15Model.PROPERTY" Role="PROPERTY" Multiplicity="0..1" />
+    <End Type="team15Model.PROPERTY" Role="PROPERTY" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Type="team15Model.PROPERTY_FEATURE" Role="PROPERTY_FEATURE" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PROPERTY">
@@ -432,4 +404,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <EntityType Name="ABOUT_US">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Images" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="About" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sponsor" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Developer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
 </Schema>

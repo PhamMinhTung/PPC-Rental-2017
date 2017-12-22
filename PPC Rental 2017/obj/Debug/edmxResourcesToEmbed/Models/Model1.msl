@@ -25,18 +25,6 @@
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="team15Model.Store.sp_renamediagram" />
     <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="team15Model.Store.sp_upgraddiagrams" />
-    <EntitySetMapping Name="ABOUT_US">
-      <EntityTypeMapping TypeName="team15Model.ABOUT_US">
-        <MappingFragment StoreEntitySet="ABOUT_US">
-          <ScalarProperty Name="Developer" ColumnName="Developer" />
-          <ScalarProperty Name="Sponsor" ColumnName="Sponsor" />
-          <ScalarProperty Name="About" ColumnName="About" />
-          <ScalarProperty Name="Images" ColumnName="Images" />
-          <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="CONTACTs">
       <EntityTypeMapping TypeName="team15Model.CONTACT">
         <MappingFragment StoreEntitySet="CONTACT">
@@ -71,7 +59,6 @@
     <EntitySetMapping Name="News_and_Events">
       <EntityTypeMapping TypeName="team15Model.News_and_Events">
         <MappingFragment StoreEntitySet="News_and_Events">
-          <ScalarProperty Name="Sale_ID" ColumnName="Sale_ID" />
           <ScalarProperty Name="Images" ColumnName="Images" />
           <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
           <ScalarProperty Name="Title" ColumnName="Title" />
@@ -176,6 +163,18 @@
           <ScalarProperty Name="Status" ColumnName="Status" />
           <ScalarProperty Name="District_ID" ColumnName="District_ID" />
           <ScalarProperty Name="WardName" ColumnName="WardName" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ABOUT_US">
+      <EntityTypeMapping TypeName="team15Model.ABOUT_US">
+        <MappingFragment StoreEntitySet="ABOUT_US">
+          <ScalarProperty Name="Developer" ColumnName="Developer" />
+          <ScalarProperty Name="Sponsor" ColumnName="Sponsor" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>

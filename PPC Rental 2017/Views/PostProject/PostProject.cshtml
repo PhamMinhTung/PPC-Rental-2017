@@ -28,7 +28,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Avatar, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <input type="file" name="Avatar" />
+                Select Avatar: <input type="file" name="Avatar" />
 
 
                 @Html.ValidationMessageFor(model => model.Avatar, "", new { @class = "text-danger" })
@@ -67,6 +67,13 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.UnitPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                <input class="form-control" type="text" placeholder="VND" disabled />
+                @Html.ValidationMessageFor(model => model.UnitPrice, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -143,24 +150,109 @@
         </div>
 
         <div class="form-group">
+            <div><a class=" btn btn-default" href="~/ViewListofProject/Unapproved" style="color:gray">Thoát</a></div>
+            <div class="col-md-10">
+
+            </div>
+        </div>
+        <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
+                @*<form action="~/ViewListofProject/Unapproved" method="post">
+                        Lựa chọn trạng thái bạn muốn đăng bài :
+                        <select id="mySelect" name="mySelect" onchange="this.form.submit()">
+                            <option value="chưa duyệt">Đăng bài </option>
+                            <option value="lưu nháp">Lưu Nháp</option>
+                        </select>
+                    </form>
+                    @*<div><button type="submit">Submit</button></div>*@
+                @*<p id="petter"></p>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("mySelect").value;
+                            document.getElementById("petter").innerHTML = x;
+                        }
+                    </script>*@
                 <!--<select type="submit">
                     <option value="Đăng Bài" class="btn btn-default">Đăng Bài</option>
                     <option value="Lưu Nháp" class="btn btn-default">Lưu Nháp</option>
                 </select>-->
                 <!--<input type="submit" onclick="alert('Chúc mừng bạn đăng bài thành công!')" value="Chưa Duyệt">-->
 
-                <select name="Status_ID" onchange="this.form.submit()">
-                    <option value="1">Chưa duyệt</option>
-                    <option value="2">Lưu Nháp</option>
-                </select>
+                <input style="visibility:hidden" type="text" name="viewlist" id="ViList" />
+                <button class="btn-nut-1" type="submit" id="1">Chưa duyệt</button>
+                <button class="btn-nut-2" id="2" type="submit">Lưu nháp</button>
+                <script>
+
+                    var btn1 = document.getElementById('1');
+                    btn1.addEventListener("click", cd);
+                    function cd() {
+                        var viewlist = document.getElementById('ViList');
+                        viewlist.setAttribute("value", "1");
+                        console.log("complete1");
+                    }
+                    var btn2 = document.getElementById('2');
+                    btn2.addEventListener("click", ln);
+                    function ln() {
+                        var viewlist = document.getElementById('ViList');
+                        viewlist.setAttribute("value", "2");
+                        console.log("complete2");
+                    }
+                </script>
+
+                @**@
+
+                @*@{ string re = "";}
+                            <button id="a" onclick="y()" type="submit" value="1">Yes</button>
+                            <button id="b" onclick="n()" type="submit" value="2">No</button>
+                            <script type="text/javascript">
+
+                    function y()
+                    {
+                        @re = (document.getElementById('a').value);
+
+                        @Html.Hidden("petter", re);
+
+
+                        }
+                        function n()
+                        {
+                            @result = document.getElementById('b').value;
+                            @Html.Hidden("petter", result);
+                                }
+
+
+                            </script>*@
             </div>
         </div>
     </div>
 }
+<script>
+    var p = document.getElementById('1');
+    p.addEventListener("click", meo);
+    function meo() {
+        @ViewBag.petter=1;
+    }
+
+    var w = document.getElementById('2');
+    p.addEventListener("click", meo2);
+    function meo2() {
+        @ViewBag.petter=2;
+    }
+</script>
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+    @*$('#button1').click(function(){
+        $('#1').attr('action', 'Unapproved');
+        });
+
+
+        $('#button2').click(function(){
+        $('#2').attr('action', 'SaveDrafts');
+        });*@
+
 }
 
 

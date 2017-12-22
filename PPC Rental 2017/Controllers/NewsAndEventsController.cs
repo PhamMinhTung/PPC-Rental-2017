@@ -10,10 +10,8 @@ namespace PPC_Rental_2017.Controllers
     public class NewsAndEventsController : Controller
     {
         // GET: NewsAndEvents
-        public ActionResult Index()
+        public ActionResult NewsAndEvents()
         {
-
-            team15Entities db = new team15Entities();
             return View();
         }
     }

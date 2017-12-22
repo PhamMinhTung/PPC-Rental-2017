@@ -27,7 +27,6 @@ namespace PPC_Rental_2017.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ABOUT_US> ABOUT_US { get; set; }
         public virtual DbSet<CONTACT> CONTACTs { get; set; }
         public virtual DbSet<DISTRICT> DISTRICTs { get; set; }
         public virtual DbSet<FEATURE> FEATUREs { get; set; }
@@ -40,6 +39,7 @@ namespace PPC_Rental_2017.Models
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<USER> USERs { get; set; }
         public virtual DbSet<WARD> WARDs { get; set; }
+        public virtual DbSet<ABOUT_US> ABOUT_US { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {

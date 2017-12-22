@@ -48,3 +48,4 @@ D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.AcceptanceTes
 D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.AcceptanceTests.Common\obj\Debug\PPCRental2017.AcceptanceTests.Common.csprojResolveAssemblyReference.cache
 D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.AcceptanceTests.Common\obj\Debug\PPCRental2017.AcceptanceTests.Common.dll
 D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.AcceptanceTests.Common\obj\Debug\PPCRental2017.AcceptanceTests.Common.pdb
+D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.AcceptanceTests.Common\bin\Debug\PPCRental2017.AcceptanceTests.Common.dll.config

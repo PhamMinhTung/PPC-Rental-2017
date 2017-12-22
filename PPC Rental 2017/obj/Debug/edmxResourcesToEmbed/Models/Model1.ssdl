@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar(max)" />
     <Property Name="Images" Type="varchar" MaxLength="200" />
     <Property Name="About" Type="nvarchar(max)" />
@@ -47,7 +47,6 @@
     <Property Name="Title" Type="nvarchar" MaxLength="50" />
     <Property Name="ShortDescription" Type="nvarchar(max)" />
     <Property Name="Images" Type="varchar" MaxLength="100" />
-    <Property Name="Sale_ID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="PROJECT_STATUS">
     <Key>
@@ -154,18 +153,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_News_and_Events_USER">
-    <End Role="USER" Type="Self.USER" Multiplicity="1" />
-    <End Role="News_and_Events" Type="Self.News_and_Events" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="USER">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="News_and_Events">
-        <PropertyRef Name="Sale_ID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_PROPERTY_DISTRICT">
     <End Role="DISTRICT" Type="Self.DISTRICT" Multiplicity="0..1" />
     <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="*" />
@@ -191,7 +178,9 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_PROPERTY_FEATURE_PROPERTY">
-    <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="0..1" />
+    <End Role="PROPERTY" Type="Self.PROPERTY" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
     <End Role="PROPERTY_FEATURE" Type="Self.PROPERTY_FEATURE" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="PROPERTY">
@@ -346,10 +335,6 @@
     <AssociationSet Name="FK_CONTACT_USER" Association="Self.FK_CONTACT_USER">
       <End Role="USER" EntitySet="USER" />
       <End Role="CONTACT" EntitySet="CONTACT" />
-    </AssociationSet>
-    <AssociationSet Name="FK_News_and_Events_USER" Association="Self.FK_News_and_Events_USER">
-      <End Role="USER" EntitySet="USER" />
-      <End Role="News_and_Events" EntitySet="News_and_Events" />
     </AssociationSet>
     <AssociationSet Name="FK_PROPERTY_DISTRICT" Association="Self.FK_PROPERTY_DISTRICT">
       <End Role="DISTRICT" EntitySet="DISTRICT" />

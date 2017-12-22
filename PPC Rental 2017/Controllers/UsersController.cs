@@ -24,28 +24,26 @@ namespace PPC_Rental_2017.Controllers
         [HttpPost]
         public ActionResult Login(string username, string password,SignIn model)
         {
-            if (ModelState.IsValid)
+            var user = db.USERs.FirstOrDefault(x => x.Email == username);
+            if (user != null)
             {
-                var user = db.USERs.FirstOrDefault(x => x.Email == username);
-                if (user != null)
+                if (user.Password.Equals(password))
                 {
-                    if (user.Password.Equals(password))
+                    Session["FullName"] = user.FullName;
+                    Session["UserID"] = user.ID;
+                    if (user.Role == "1")
                     {
-                        Session["FullName"] = user.FullName;
-                        Session["UserID"] = user.ID;
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Unapproved","ViewListofProject");
                     }
-                    else
+                    if (user.Role == "2")
                     {
-                        ViewBag.mgs = "Tài khoản không tồn tại";
+                        return Redirect("~/Admin/PropertyAdmin/Index");
                     }
-
                 }
-                return View();
             }
             else
             {
-               
+                ViewBag.mgs = "tài khoản không tồn tại";
             }
             return View();
         }

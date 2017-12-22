@@ -130,6 +130,9 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\PPC Rental 2017\PPC Rental 2017.csproj">
       <Project>{9598d954-7a65-4df7-b86d-e409a1f651ba}</Project>
       <Name>PPC Rental 2017</Name>

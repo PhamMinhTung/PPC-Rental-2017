@@ -46,10 +46,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
@@ -212,6 +214,7 @@
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\PostProjectController.cs" />
     <Compile Include="Controllers\ViewDetailProjectController.cs" />
+    <Compile Include="Controllers\ViewListofProjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -312,7 +315,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\About us.jpg" />
+    <Content Include="Images\About\About us.jpg" />
     <Content Include="Images\bg-footer.png" />
     <Content Include="Images\EWMLogoHome.png" />
     <Content Include="Images\Img1.jpg" />
@@ -339,9 +342,9 @@
     <Content Include="Images\main_demo_new.jpg" />
     <Content Include="Images\main_demo_2.jpg" />
     <Content Include="Images\main_demo_3.jpg" />
-    <Content Include="Images\new1.jpg" />
-    <Content Include="Images\new2.jpg" />
-    <Content Include="Images\new3.jpg" />
+    <Content Include="Images\News\new1.jpg" />
+    <Content Include="Images\News\new2.jpg" />
+    <Content Include="Images\News\new3.jpg" />
     <Content Include="Image\EWMLogoHome.png" />
     <Content Include="Image\IMG_1592-stamp.jpg" />
     <Content Include="Image\PIS3280-Edit-stamp.jpg" />
@@ -427,6 +430,11 @@
     <Content Include="Areas\Admin\Views\PropertyAdmin\Details.cshtml" />
     <Content Include="Areas\Admin\Views\PropertyAdmin\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\PropertyAdmin\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\PropertyAdmin\News.cshtml" />
+    <Content Include="Areas\Admin\Views\PropertyAdmin\editnews.cshtml" />
+    <Content Include="Areas\Admin\Views\PropertyAdmin\addnews.cshtml" />
+    <Content Include="Areas\Admin\Views\PropertyAdmin\About.cshtml" />
+    <Content Include="Areas\Admin\Views\PropertyAdmin\editabout.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\dataTables.bootstrap4.js" />
@@ -456,8 +464,8 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Users\Shared\Error.cshtml" />
+    <Content Include="Views\Users\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -478,10 +486,10 @@
     <Content Include="Views\Manage\ManageLogins.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Users\Shared\Lockout.cshtml" />
+    <Content Include="Views\Users\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\ViewDetailProject\ViewDetailProject.cshtml" />
-    <Content Include="Views\Shared\_ViewDetailLayout.cshtml" />
+    <Content Include="Views\Users\Shared\_ViewDetailLayout.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
@@ -493,11 +501,14 @@
     <Content Include="Views\Home\Filter.cshtml" />
     <Content Include="Views\Home\ViewDetailProject.cshtml" />
     <Content Include="Views\Contact\Contact.cshtml" />
+    <Content Include="Views\NewsAndEvents\NewsAndEvents.cshtml" />
+    <Content Include="Views\ViewListofProject\SaveDrafts.cshtml" />
+    <Content Include="Views\ViewListofProject\Unapproved.cshtml" />
+    <Content Include="Views\Users\Shared\_AboutLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Views\NewsAndEvents\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -97,5 +97,101 @@ namespace PPC_Rental_2017.Areas.Admin.Controllers
             read.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult News()
+        {
+            var news = read.News_and_Events.ToList();
+            return View(news);
+        }
+
+        [HttpGet]
+        public ActionResult editnews(int id)
+        {
+            var news = read.News_and_Events.Find(id);
+            return View(news);
+        }
+
+        [HttpPost]
+        public ActionResult editnews(News_and_Events model, HttpPostedFileBase Avatar)
+        {
+            News_and_Events n = read.News_and_Events.Find(model.ID);
+
+            if (Avatar != null)
+            {
+                string avatar = "";
+                if (Avatar.ContentLength > 0)
+                {
+                    var filename = Path.GetFileName(Avatar.FileName);
+                    var path = Path.Combine(Server.MapPath("~/Images/News/"), filename);
+                    Avatar.SaveAs(path);
+                    avatar = filename;
+                }
+                n.Images = avatar;
+            }
+            n.Title = model.Title;
+            n.ShortDescription = model.ShortDescription;
+
+            read.Entry(n).State = System.Data.Entity.EntityState.Modified;
+            read.SaveChanges();
+            return RedirectToAction("News");
+        }
+
+        [HttpGet]
+        public ActionResult addnews(int id)
+        {
+            var news = read.News_and_Events.Find(id);
+            return View(news);
+        }
+
+        [HttpPost]
+        public ActionResult addnews(News_and_Events model, HttpPostedFileBase Avatar)
+        {
+            News_and_Events n = read.News_and_Events.Find(model.ID);
+
+            if (Avatar != null)
+            {
+                string avatar = "";
+                if (Avatar.ContentLength > 0)
+                {
+                    var filename = Path.GetFileName(Avatar.FileName);
+                    var path = Path.Combine(Server.MapPath("~/Images/News/"), filename);
+                    Avatar.SaveAs(path);
+                    avatar = filename;
+                }
+                model.Images = avatar;
+            }
+
+           
+            read.News_and_Events.Add(model);
+            read.SaveChanges();
+            return RedirectToAction("News");
+        }
+        [HttpGet]
+        public ActionResult About()
+        {
+            var about = read.ABOUT_US.ToList();
+            return View(about);
+        }
+
+        [HttpGet]
+        public ActionResult editabout(int id)
+        {
+            ABOUT_US edit = read.ABOUT_US.Find(id);
+            return View(edit);
+        }
+
+        [HttpPost]
+        public ActionResult editabout(ABOUT_US model)
+        {
+            ABOUT_US ab = read.ABOUT_US.Find(model.ID);
+            ab.Title = model.Title;
+            ab.Images = model.Images;
+            ab.About = model.About;
+            ab.Sponsor = model.Sponsor;
+            ab.Developer = model.Developer;
+
+            read.Entry(ab).State = System.Data.Entity.EntityState.Modified;
+            read.SaveChanges();
+            return RedirectToAction("About");   
+        }
     }
 }
