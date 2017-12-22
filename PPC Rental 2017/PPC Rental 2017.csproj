@@ -464,8 +464,8 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Users\Shared\Error.cshtml" />
-    <Content Include="Views\Users\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -486,10 +486,10 @@
     <Content Include="Views\Manage\ManageLogins.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Users\Shared\Lockout.cshtml" />
-    <Content Include="Views\Users\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\ViewDetailProject\ViewDetailProject.cshtml" />
-    <Content Include="Views\Users\Shared\_ViewDetailLayout.cshtml" />
+    <Content Include="Views\Shared\_ViewDetailLayout.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
@@ -504,7 +504,7 @@
     <Content Include="Views\NewsAndEvents\NewsAndEvents.cshtml" />
     <Content Include="Views\ViewListofProject\SaveDrafts.cshtml" />
     <Content Include="Views\ViewListofProject\Unapproved.cshtml" />
-    <Content Include="Views\Users\Shared\_AboutLayout.cshtml" />
+    <Content Include="Views\Shared\_AboutLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
