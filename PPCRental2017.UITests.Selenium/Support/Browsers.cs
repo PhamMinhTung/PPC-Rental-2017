@@ -1,15 +1,14 @@
 ﻿using System;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.IE;
 using OpenQA.Selenium;
 
-namespace BookShop.UITests.Selenium.Support
+
+namespace PPCRental_Project.UITests.Selenium.Support
 {
     public static class Browsers
     {
         public static readonly TimeSpan DefaultTimeout = TimeSpan.FromSeconds(10);
-
         private static IWebDriver _chrome;
         public static IWebDriver Chrome
         {
@@ -34,21 +33,5 @@ namespace BookShop.UITests.Selenium.Support
                 return _firefox;
             }
         }
-
-        private static IWebDriver _ie;
-        public static IWebDriver IE
-        {
-            get
-            {
-                if (_ie == null)
-                {
-                    _ie = new InternetExplorerDriver();
-                    _ie.Manage().Timeouts().ImplicitWait = DefaultTimeout;
-                }
-
-                return _ie;
-            }
-        }
-
     }
 }

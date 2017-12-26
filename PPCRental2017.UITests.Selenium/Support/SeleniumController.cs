@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Diagnostics;
 using OpenQA.Selenium;
 using BookShop.UITests.Selenium.Config;
+using PPCRental_Project.UITests.Selenium.Support;
 
 namespace BookShop.UITests.Selenium.Support
 {

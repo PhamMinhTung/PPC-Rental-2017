@@ -34,6 +34,12 @@
       <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Drill, Version=1.0.130.206, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Drill.1.0.130\lib\net40\Drill.dll</HintPath>
+    </Reference>
+    <Reference Include="Drill.Integration.Web, Version=1.0.130.206, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Drill.Integration.Web.1.0.130\lib\net40\Drill.Integration.Web.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -72,6 +78,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
@@ -112,18 +119,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drivers\Home\HomeDriver.cs" />
+    <Compile Include="Drivers\Login\LoginDriver.cs" />
+    <Compile Include="Drivers\PostProject\PostProjectDriver.cs" />
+    <Compile Include="Drivers\Property\PropertyDriver.cs" />
     <Compile Include="Drivers\ViewDetails\ViewDetailProjectDrivers.cs" />
+    <Compile Include="Features\Login.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\PostProject.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PostProject.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\ViewDetailProject.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ViewDetailProject.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StepDifinitions\HomeScreenStep.cs" />
+    <Compile Include="StepDifinitions\LoginStep.cs" />
+    <Compile Include="StepDifinitions\PostProjectStep.cs" />
     <Compile Include="StepDifinitions\ViewDetailProjectStep.cs" />
     <Compile Include="Support\ActionResultExtensions.cs" />
+    <Compile Include="Support\CatalogContentU.cs" />
     <Compile Include="Support\CatalogContext.cs" />
     <Compile Include="Support\DatabaseTools.cs" />
+    <Compile Include="Support\HttpContextStub.cs" />
     <Compile Include="Support\ReferenceDetailsList.cs" />
+    <Compile Include="Support\ReferencePostList.cs" />
+    <Compile Include="Support\ReferenceUserList.cs" />
     <Compile Include="Support\TableExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +165,10 @@
       <Project>{9598d954-7a65-4df7-b86d-e409a1f651ba}</Project>
       <Name>PPC Rental 2017</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PPCRental2017.AcceptanceTests.Common\PPCRental2017.AcceptanceTests.Common.csproj">
+      <Project>{caaf0fc7-d81b-48c5-9d84-5c585799883c}</Project>
+      <Name>PPCRental2017.AcceptanceTests.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PPCRental2017.UITests.Selenium\PPCRental2017.UITests.Selenium.csproj">
       <Project>{ba4289e0-03a1-465a-98fd-9d8a80a71329}</Project>
       <Name>PPCRental2017.UITests.Selenium</Name>
@@ -144,12 +176,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Features\Login.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Login.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\PostProject.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PostProject.feature.cs</LastGenOutput>
+    </None>
     <None Include="Features\ViewDetailProject.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ViewDetailProject.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

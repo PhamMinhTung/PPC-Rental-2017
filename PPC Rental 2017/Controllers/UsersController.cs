@@ -22,7 +22,7 @@ namespace PPC_Rental_2017.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(string username, string password,SignIn model)
+        public ActionResult Login(string username, string password)
         {
             var user = db.USERs.FirstOrDefault(x => x.Email == username);
             if (user != null)

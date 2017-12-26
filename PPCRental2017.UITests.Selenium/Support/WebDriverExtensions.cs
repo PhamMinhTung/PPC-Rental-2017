@@ -4,6 +4,7 @@ using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System.Collections.Generic;
+using PPCRental_Project.UITests.Selenium.Support;
 
 namespace BookShop.UITests.Selenium.Support
 {

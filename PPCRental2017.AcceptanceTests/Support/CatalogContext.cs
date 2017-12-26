@@ -5,8 +5,10 @@
         public CatalogContext()
         {
             ReferenceDetails = new ReferenceDetailsList();
+            ReferenceProject = new ReferenceDetailsList();
         }
 
         public ReferenceDetailsList ReferenceDetails { get; set; }
+        public ReferenceDetailsList ReferenceProject { get; set; }
     }
 }

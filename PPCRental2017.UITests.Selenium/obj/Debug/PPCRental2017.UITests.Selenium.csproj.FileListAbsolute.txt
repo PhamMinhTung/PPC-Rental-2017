@@ -1,5 +1,0 @@
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\PPCRental2017.UITests.Selenium.dll
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UITests.Selenium\bin\Debug\PPCRental2017.UITests.Selenium.pdb
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.csprojResolveAssemblyReference.cache
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.dll
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UITests.Selenium\obj\Debug\PPCRental2017.UITests.Selenium.pdb

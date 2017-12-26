@@ -1,6 +1,0 @@
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UnitTests\bin\Debug\PPCRental2017.UnitTests.dll
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UnitTests\bin\Debug\PPCRental2017.UnitTests.pdb
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UnitTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UnitTests\obj\Debug\PPCRental2017.UnitTests.csprojResolveAssemblyReference.cache
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UnitTests\obj\Debug\PPCRental2017.UnitTests.dll
-D:\HK1-Năm 3\Final Project\Code\New\PPC-Rental-2017\PPCRental2017.UnitTests\obj\Debug\PPCRental2017.UnitTests.pdb
